@@ -1,0 +1,43 @@
+.pageContent .ant-descriptions-item-label {
+  width: 30%;
+}
+.pageContent .ant-descriptions-item-content {
+  width: 70%;
+}
+.pageContent .waIcon {
+  width: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+.pageContent .mailIcon,
+.pageContent .phoneIcon {
+  margin-right: 5px;
+}
+.pageContent .calendarIcon {
+  margin-left: 20px;
+}
+.pageContent .ant-descriptions.ant-descriptions-bordered {
+  margin-bottom: 20px;
+}
+@media (max-width: 760px) {
+  .pageContent .ant-descriptions-item-label {
+    width: 100%;
+    display: block;
+  }
+  .pageContent .ant-descriptions-item-content {
+    width: 100%;
+    display: block;
+  }
+  .pageContent .ant-descriptions.ant-descriptions-bordered {
+  }
+  .pageContent .ant-descriptions-title {
+    margin: 15px;
+  }
+  .pageContent .ant-descriptions-bordered .ant-descriptions-item-label,
+  .pageContent .ant-descriptions-bordered .ant-descriptions-item-content {
+    padding: 15px;
+  }
+}

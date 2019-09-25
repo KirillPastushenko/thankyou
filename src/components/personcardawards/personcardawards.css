@@ -1,0 +1,70 @@
+.rewards{width: 80%;margin: 0 auto;}
+.rewards>div{width: 25%}
+.reward {width: 70px;height: 70px;background-size: 100% auto;}
+
+.reward-year-5 {background-image: url(../../images/years-5.svg)}
+.reward-year-10{background-image: url(../../images/years-10.svg)}
+.reward-year-15{background-image: url(../../images/years-15.svg)}
+.reward-year-20{background-image: url(../../images/years-20.svg)}
+.reward-year-25{background-image: url(../../images/years-25.svg)}
+
+.reward-get-10{background-image: url(../../images/get-10.svg)}
+.reward-get-30{background-image: url(../../images/get-30.svg)}
+.reward-get-50{background-image: url(../../images/get-50.svg)}
+.reward-get-100{background-image: url(../../images/get-100.svg)}
+.reward-get-200{background-image: url(../../images/get-200.svg)}
+.reward-get-500{background-image: url(../../images/get-500.svg)}
+
+.reward-gave-10{background-image: url(../../images/gave-10.svg)}
+.reward-gave-30{background-image: url(../../images/gave-30.svg)}
+.reward-gave-50{background-image: url(../../images/gave-50.svg)}
+.reward-gave-100{background-image: url(../../images/gave-100.svg)}
+.reward-gave-200{background-image: url(../../images/gave-200.svg)}
+.reward-gave-500{background-image: url(../../images/gave-500.svg)}
+
+.reward-lider-10{background-image: url(../../images/lider-10.svg)}
+.reward-lider-50{background-image: url(../../images/lider-50.svg)}
+.reward-lider-100{background-image: url(../../images/lider-100.svg)}
+.reward-lider-200{background-image: url(../../images/lider-200.svg)}
+ 
+
+.reward-callback{background-image: url(../../images/callback.svg)}
+
+.reward-month{background-image: url(../../images/month.svg)}
+
+.reward-rukovoditel-funkcii{background-image: url(../../images/rukovoditel-funkcii.svg)}
+.reward-zabota-o-sotrudnikah-5{background-image: url(../../images/zabota-o-sotrudnikah-5.svg)}
+.reward-zabota-o-sotrudnikah-10{background-image: url(../../images/zabota-o-sotrudnikah-10.svg)}
+.reward-zabota-o-sotrudnikah-20{background-image: url(../../images/zabota-o-sotrudnikah-20.svg)}
+.reward-zabota-o-sotrudnikah-50{background-image: url(../../images/zabota-o-sotrudnikah-50.svg)}
+.reward-zabota-o-sotrudnikah-100{background-image: url(../../images/zabota-o-sotrudnikah-100.svg)} 
+
+.reward-visokie-dostijeniya-5{background-image: url(../../images/visokie-dostijeniya-5.svg)}
+.reward-visokie-dostijeniya-10{background-image: url(../../images/visokie-dostijeniya-10.svg)}
+.reward-visokie-dostijeniya-20{background-image: url(../../images/visokie-dostijeniya-20.svg)}
+.reward-visokie-dostijeniya-50{background-image: url(../../images/visokie-dostijeniya-50.svg)}
+.reward-visokie-dostijeniya-100{background-image: url(../../images/visokie-dostijeniya-100.svg)}
+ 
+.reward-stremlenie-5{background-image: url(../../images/stremlenie-5.svg)}
+.reward-stremlenie-10{background-image: url(../../images/stremlenie-10.svg)}
+.reward-stremlenie-20{background-image: url(../../images/stremlenie-20.svg)}
+.reward-stremlenie-50{background-image: url(../../images/stremlenie-50.svg)}
+.reward-stremlenie-100{background-image: url(../../images/stremlenie-100.svg)}
+
+.reward-pobeda-s-klientami-5{background-image: url(../../images/pobeda-s-klientami-5.svg)}
+.reward-pobeda-s-klientami-10{background-image: url(../../images/pobeda-s-klientami-10.svg)}
+.reward-pobeda-s-klientami-20{background-image: url(../../images/pobeda-s-klientami-20.svg)}
+.reward-pobeda-s-klientami-50{background-image: url(../../images/pobeda-s-klientami-50.svg)}
+.reward-pobeda-s-klientami-100{background-image: url(../../images/pobeda-s-klientami-100.svg)}
+
+.reward-odna-komanda-5{background-image: url(../../images/odna-komanda-5.svg)}
+.reward-odna-komanda-10{background-image: url(../../images/odna-komanda-10.svg)}
+.reward-odna-komanda-20{background-image: url(../../images/odna-komanda-20.svg)}
+.reward-odna-komanda-50{background-image: url(../../images/odna-komanda-50.svg)}
+.reward-odna-komanda-100{background-image: url(../../images/odna-komanda-100.svg)}
+
+.reward-chestnost-5{background-image: url(../../images/chestnost-5.svg)}
+.reward-chestnost-10{background-image: url(../../images/chestnost-10.svg)}
+.reward-chestnost-20{background-image: url(../../images/chestnost-20.svg)}
+.reward-chestnost-50{background-image: url(../../images/chestnost-50.svg)}
+.reward-chestnost-100{background-image: url(../../images/chestnost-100.svg)}

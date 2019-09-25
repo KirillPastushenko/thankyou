@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/teams/rubsbcomms/PhoneBookApp/static/css/main.50ff72be.chunk.css",
+    "main.js": "/teams/rubsbcomms/PhoneBookApp/static/js/main.01b550da.chunk.js",
+    "main.js.map": "/teams/rubsbcomms/PhoneBookApp/static/js/main.01b550da.chunk.js.map",
+    "runtime~main.js": "/teams/rubsbcomms/PhoneBookApp/static/js/runtime~main.5f39a433.js",
+    "runtime~main.js.map": "/teams/rubsbcomms/PhoneBookApp/static/js/runtime~main.5f39a433.js.map",
+    "static/css/2.e8d046a2.chunk.css": "/teams/rubsbcomms/PhoneBookApp/static/css/2.e8d046a2.chunk.css",
+    "static/js/2.a34b4133.chunk.js": "/teams/rubsbcomms/PhoneBookApp/static/js/2.a34b4133.chunk.js",
+    "static/js/2.a34b4133.chunk.js.map": "/teams/rubsbcomms/PhoneBookApp/static/js/2.a34b4133.chunk.js.map",
+    "index.html": "/teams/rubsbcomms/PhoneBookApp/index.html",
+    "precache-manifest.80deda84555bf33f166cd6654918aa5f.js": "/teams/rubsbcomms/PhoneBookApp/precache-manifest.80deda84555bf33f166cd6654918aa5f.js",
+    "service-worker.js": "/teams/rubsbcomms/PhoneBookApp/service-worker.js",
+    "static/css/2.e8d046a2.chunk.css.map": "/teams/rubsbcomms/PhoneBookApp/static/css/2.e8d046a2.chunk.css.map",
+    "static/css/main.50ff72be.chunk.css.map": "/teams/rubsbcomms/PhoneBookApp/static/css/main.50ff72be.chunk.css.map",
+    "static/media/wa.svg": "/teams/rubsbcomms/PhoneBookApp/static/media/wa.a8f1e7b7.svg"
+  }
+}

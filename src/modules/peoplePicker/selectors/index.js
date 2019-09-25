@@ -1,0 +1,1 @@
+export { selectPeople } from "./selectPeople";

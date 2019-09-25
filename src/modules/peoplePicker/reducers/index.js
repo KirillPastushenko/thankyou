@@ -1,0 +1,1 @@
+export { peoplePicker } from "./peoplePicker";

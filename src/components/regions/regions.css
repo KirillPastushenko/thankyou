@@ -1,0 +1,2 @@
+.regionList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: center;align-content: stretch; list-style: none}
+.regionList li{margin: 0 5px;}

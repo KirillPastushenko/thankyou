@@ -1,0 +1,33 @@
+.pageContent .flex {
+  display: flex;
+}
+.pageContent .flex .ant-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.pageContent .ant-col-8 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.pageContent .ant-col-8:nth-child(3n) {
+  padding-right: 0;
+}
+.pageContent .ant-col-8:nth-child(3n+1) {
+    padding-left: 0;
+  }
+@media (max-width: 760px) {
+  .pageContent .ant-col-8 {
+    width: 100%;
+  }
+  .pageContent .ant-col-8:nth-child(3n+1) {
+    padding-left: 10px;
+  }
+  .pageContent .ant-col-8:nth-child(3n) {
+    padding-right: 10px;
+  }
+  .ant-tabs-bar {
+    display: none;
+  }
+}

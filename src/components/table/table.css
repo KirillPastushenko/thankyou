@@ -1,0 +1,15 @@
+.pageContent .ant-pagination-item {
+  display: none;
+}
+.pageContent .ant-pagination-item.ant-pagination-item-active {
+  display: inline-block;
+}
+.pageContent .ant-table-pagination {
+  display: none;
+}
+.pageContent .ant-table {
+  margin-bottom: 20px;
+}
+.pageContent .ant-table-row td {
+  cursor: pointer;
+}
