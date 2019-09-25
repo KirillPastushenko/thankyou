@@ -20,7 +20,7 @@ class App extends Component {
     getUser();
     getUserListId();
   }
-  render() {
+  render() {  
     return (
       <Layout> 
         <section id="thanks-top">
@@ -45,6 +45,8 @@ class App extends Component {
           </div> 
 
         </section>  
+      
+
         <Default/>
         <Footer/>  
       </Layout>

@@ -1,11 +1,11 @@
 import React, { PureComponent, Fragment } from "react";
 import { connect } from "react-redux";
 import { addThankYou } from "../../actions";
-
 import { ThankYouList } from "../../modules/thankYouList";
-import  Regions  from "../../components/regions";
-import  Whom  from "../../components/whom";
-import  Who  from "../../components/who";
+import Clouds from "../../components/clouds"
+import Regions from "../../components/regions";
+import Whom from "../../components/whom";
+import Who from "../../components/who";
 import "./default.css";
  
 
@@ -15,10 +15,10 @@ class Default extends PureComponent {
 
   render() {
     return (
-      <div className="container">
+     
         <Fragment>
           <section>
-		        <div className="container">
+		        <div className="container" style={{position:"relative",zIndex:1}}>
               <Regions/>
               <div className="flex-spb-t">
                 <ThankYouList />
@@ -28,9 +28,10 @@ class Default extends PureComponent {
                 </div>
               </div>
             </div>
+            <Clouds/>
           </section>
         </Fragment>
-      </div>
+    
     );
   }
 } 
@@ -38,6 +39,5 @@ class Default extends PureComponent {
 export default connect(
   state => ({
     user: state.user
-  }),
-  {}
+  }),{}
 )(Default);
