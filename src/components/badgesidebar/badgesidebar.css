@@ -1,0 +1,6 @@
+.person-rating{position: relative;background-color: #ddd;display: inline-block;font-size: 14px;font-family: 'Effra_Regular';color: #fff;padding: 0px 7px;border-radius: 13px;line-height: 21px;}
+.person-rating:after{color:#1D1D1B;position: absolute;opacity: 0.5;font-size: 11px;letter-spacing: 0.06em;left: calc(100% + 8px);top: 1px;}
+#thx-whom .person-rating{background-color: #5D9D95;}
+#thx-whom .person-rating:after{content:"ПОЛУЧИЛ";}
+#thx-who .person-rating{background-color: #E9BD00;}
+#thx-who .person-rating:after{content:"ОТПРАВИЛ";}

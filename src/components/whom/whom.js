@@ -1,5 +1,5 @@
 import React, { PureComponent, Fragment } from "react";
-import BadgeSidebar from  "../badgesidebar"
+import BadgeSidebar from  "../badgesidebar";
 	class Whom extends PureComponent {
 	state = {};
 	render() {

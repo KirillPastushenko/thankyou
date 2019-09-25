@@ -1,4 +1,5 @@
 import React, { PureComponent, Fragment } from "react";
+import './badgesidebar.css'
 	class BadgeSidebar extends PureComponent {
 	state = {};
 	render() {
