@@ -45,13 +45,14 @@ class Form extends PureComponent {
   render() {
     return (
       <Fragment>
-          <PhoneSearch {...this.props}></PhoneSearch>
-          <PeoplePicker />
           <Select
             name="AppNomination"
             listTitle="AppNominations" 
             onChange={this.handleChange}
           />
+          <PhoneSearch {...this.props}></PhoneSearch>
+          <PeoplePicker />
+
           <Textarea name="AppText" onChange={this.handleChange} />
           <div className="flex-spb-c">
             <TenInput name="AppScores" onChange={this.handleChange} />

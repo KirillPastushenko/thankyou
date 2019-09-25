@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from "react";
 import PersonCardAwards from "../personcardawards";
 import PersonCardThanks from "../personcardthanks"
+import "./personcard.css";
 class PersonCard extends PureComponent {
   state = {};
   render() {

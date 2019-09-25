@@ -1,2 +1,11 @@
 .regionList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: center;align-content: stretch; list-style: none}
 .regionList li{margin: 0 5px;}
+
+
+.regionHeader, #thanks ul.regionList li {float: left;margin-right: 0;color: #666;border-bottom: none; cursor: pointer;opacity: 1;margin-bottom: 5px;font-family: 'Effra_Regular';font-size: 14px;margin: 0px 15px;}
+ul.regionList li span {margin-right: 0;color: #666;border-bottom: none;cursor: pointer;opacity: 1;margin-bottom: 5px;font-family: 'Effra_Regular';font-size: 14px;line-height: 1;}
+ul.regionList li.active span {color: #fff;}
+.regionList{z-index: 1; position: relative}
+.regionBlock {padding-top: 23px;padding-bottom: 13px;position:relative}
+.regionBlock:after{content:"";position: absolute;width: 64%;height: 100%;background-color: #ddd;left: 18%;top: 0;border-radius: 50px;z-index: 0;}
+ul.regionList li.active{color: #fff;background-color: #1D1D1B;border-radius: 15px;padding: 2px 9px;}
