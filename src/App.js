@@ -18,7 +18,7 @@ class App extends Component {
   componentDidMount() {
     const { getUser, getUserListId } = this.props;
     getUser();
-    getUserListId();  
+    getUserListId();
   }
   render() {   
     return (
