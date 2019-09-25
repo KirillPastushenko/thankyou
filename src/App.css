@@ -105,12 +105,7 @@ h5{ font-family: 'Effra_Medium';text-align: center;color: #1D1D1B;font-size: 16p
 
 .sidebar{margin-left: 30px;}
 .sidebar .person-name, #thx-news .person-name, #thx-news .person-name span{font-size: 16px;letter-spacing: 0;width: 135px;margin-top: 3px;line-height: 1.2;color: #1D1D1B;word-wrap: break-word;font-family: 'Effra_Regular';}
-
-.person-rating-whom{position: relative;background-color: #ddd;display: inline-block;font-size: 14px;font-family: 'Effra_Regular';color: #fff;background-color: #5D9D95;padding: 0px 7px;border-radius: 13px;line-height: 21px;}
-.person-rating-whom:after{content:"ПОЛУЧИЛ";color:#1D1D1B;position: absolute;opacity: 0.5;font-size: 11px;letter-spacing: 0.06em;left: calc(100% + 8px);top: 1px;}
-.person-rating-who{position: relative;background-color: #ddd;display: inline-block;font-size: 14px;font-family: 'Effra_Regular';color: #fff;background-color: #E9BD00;padding: 0px 7px;border-radius: 13px;line-height: 21px;}
-.person-rating-who:after{content:"ОТПРАВИЛ";color:#1D1D1B;position: absolute;opacity: 0.5;font-size: 11px;letter-spacing: 0.06em;left: calc(100% + 8px);top: 1px;}
-
+ 
 .head-green,.head-red,.head-yellow {position:relative;height: 102px;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: center;align-items: center;align-content: stretch;}
 .sidebar .angle-right{margin-bottom: 25px;}
 .angle-right:after{ content:''; position:absolute;border: 100px solid transparent; border-bottom: 100px solid green; border-left: 100px solid green; transform: matrix(1,-0.06,0,0.51,0,7);top: -62px;left: 100%;}
