@@ -18,9 +18,9 @@ class App extends Component {
   componentDidMount() {
     const { getUser, getUserListId } = this.props;
     getUser();
-    getUserListId();
+    getUserListId();  
   }
-  render() {  
+  render() {   
     return (
       <Layout> 
         <section id="thanks-top">
