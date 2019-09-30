@@ -19,7 +19,7 @@ class Default extends PureComponent {
         <Fragment>
           <section>
 		        <div className="container" style={{position:"relative",zIndex:1}}>
-              <Regions/>
+              {/* <Regions/> */}
               <div className="flex-spb-t">
                 <ThankYouList />
                 <div className="sidebar col-4">

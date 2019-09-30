@@ -28,7 +28,7 @@ class ThankYouItem extends Component {
           <div className="comment">{children.text}</div>
           <div className="comment like">
             <span className="date">{children.date}</span>&nbsp;&nbsp;&nbsp;{" "}
-            <span>
+            {/* <span>
               <i
                 className="icon-thumbs-up"
                 id="like10693"
@@ -37,7 +37,7 @@ class ThankYouItem extends Component {
                 data-id="10693"
               ></i>
               <span className="">like this</span>
-            </span>
+            </span> */}
           </div>
         </div>
       </Fragment>

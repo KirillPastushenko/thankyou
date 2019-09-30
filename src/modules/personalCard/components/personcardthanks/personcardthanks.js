@@ -10,11 +10,11 @@ class PersonCardThanks extends PureComponent {
   componentDidMount() {
     const { getAllThanks, getWeekThanks, userListId } = this.props;
     const today = moment();
-    const dayFromMonday = today.isoWeekday() - 1;
+    const dayFromMonday = today.isoWeekday();
     const monday = today
       .subtract(dayFromMonday, "days")
-      .format("YYYY-MM-DD")+"T00:00:00+03:00";
-
+      .format("YYYY-MM-DD") + "T14:00:00Z";
+    console.log(monday)
     getAllThanks(userListId);
     getWeekThanks({ userListId, monday });
   }

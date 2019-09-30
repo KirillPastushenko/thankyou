@@ -3,10 +3,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 @font-face {
     font-family: 'Effra_Bold';
-    src: url('fonts/Effra_W_Bd.eot');
-    src: url('fonts/Effra_W_Bd.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Effra_W_Bd.woff2') format('woff2'),
-         url('fonts/Effra_W_Bd.woff') format('woff');
+    src: url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Bd.eot');
+    src: url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Bd.eot?#iefix') format('embedded-opentype'),
+         url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Bd.woff2') format('woff2'),
+         url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Bd.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
@@ -14,20 +14,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 @font-face {
     font-family: 'Effra_Medium';
-    src: url('fonts/Effra_W_Md.eot');
-    src: url('fonts/Effra_W_Md.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Effra_W_Md.woff2') format('woff2'),
-         url('fonts/Effra_W_Md.woff') format('woff');
+    src: url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Md.eot');
+    src: url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Md.eot?#iefix') format('embedded-opentype'),
+         url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Md.woff2') format('woff2'),
+         url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Md.woff') format('woff');
     font-weight: normal;
     font-style: normal; 
 }
 
 @font-face { 
     font-family: 'Effra_Regular';
-    src: url('fonts/Effra_W_Rg.eot');
-    src: url('fonts/Effra_W_Rg.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Effra_W_Rg.woff') format('woff'),
-         url('fonts/Effra_W_Rg.ttf') format('truetype');
+    src: url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Rg.eot');
+    src: url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Rg.eot?#iefix') format('embedded-opentype'),
+         url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Rg.woff') format('woff'),
+         url('https://cchellenic.sharepoint.com/sites/projects-RU-Platform/App/static/media/Effra_W_Rg.ttf') format('truetype');
     font-weight: normal;
     font-style: normal; 
 }
@@ -76,7 +76,7 @@ footer .footer {background-color:#1D1D1B;color:#fff;text-align: center;padding: 
 * {box-sizing:border-box}
 body {font-family: 'Effra_Regular';overflow-x: hidden}
 body .container{margin: 0 auto; width: calc(100% - 30px); max-width: 1155px; }
-#thanks-top{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1920 852' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cpath fill='%23d1111d' d='M0 35.5h1920v618.9H0z'/%3E%3Cpath d='M141 721.8l1779-245V852H141V721.8z' fill='%235d9d95'/%3E%3Cpath d='M0 195.3s96-23.5 534-24.9c244.2-.8 434.4-2.6 856.5-24.9 422-22.1 529.5-98.2 529.5-98.2V0H0v195.3z' fill='%23e9bd00'/%3E%3Cpath d='M250.5 852s3.4-123.2 919.5-216.6c375.5-38.2 750-78 750-78V394s-96 25-334.5 54.4C1346.9 477.9 740.8 534.2 393 576.3c-346.3 41.9-393 52-393 52V852h250.5z' fill='%231d1d1b'/%3E%3C/svg%3E");background-repeat: no-repeat;background-size: 100vw 100%;background-position: center top;}
+#thanks-top{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1920 852' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cpath fill='%23d1111d' d='M0 35.5h1920v618.9H0z'/%3E%3Cpath d='M141 721.8l1779-245V852H141V721.8z' fill='%235d9d95'/%3E%3Cpath d='M0 195.3s96-23.5 534-24.9c244.2-.8 434.4-2.6 856.5-24.9 422-22.1 529.5-98.2 529.5-98.2V0H0v195.3z' fill='%23e9bd00'/%3E%3Cpath d='M250.5 852s3.4-123.2 919.5-216.6c375.5-38.2 750-78 750-78V394s-96 25-334.5 54.4C1346.9 477.9 740.8 534.2 393 576.3c-346.3 41.9-393 52-393 52V852h250.5z' fill='%231d1d1b'/%3E%3C/svg%3E");background-repeat: no-repeat;background-size: 100vw 100%;background-position: center top;margin-bottom: 20px;}
 section{position: relative;}
 
 h1{font-family: 'Effra_Regular';font-size: 35px;margin-top: 128px;text-align: left;color: #fff;}
