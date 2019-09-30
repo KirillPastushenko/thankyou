@@ -4,7 +4,7 @@ import { thankYouList } from "../../../constants/config";
 const jsom = JSOM();
 const helper = Helpers();
 const { lists } = jsom;
-const rowLimit = 10;
+const rowLimit = 50;
 let viewFields = [
   "ID",
   "Title",
@@ -29,6 +29,7 @@ export const getThankYouRequest = payload => {
       .Scope(CamlBuilder.ViewScope.RecursiveAll)
       .RowLimit(rowLimit)
       .Query()
+      .OrderByDesc("ID")
       .ToString();
     lists.getItems(thankYouList, caml).then(data => {
       const result = helper.enumerator(data.targetListItems);

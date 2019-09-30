@@ -39,9 +39,9 @@ class ThankYouList extends Component {
                 <ThankYouItem key={item.id}>{item}</ThankYouItem>
               ))}
           </div>
-          <div id="thx-news-more" className="btn-more all">
+          {/* <div id="thx-news-more" className="btn-more all">
             ЕЩЁ...
-          </div>
+          </div> */}
         </div>
       </Fragment>
     );

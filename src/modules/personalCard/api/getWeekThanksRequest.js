@@ -20,9 +20,10 @@ export const getWeekThanksRequest = payload => {
       .Id()
       .EqualTo(payload.userListId)
       .And()
-      .DateField("Created")
+      .DateTimeField("Created")
       .GreaterThanOrEqualTo(payload.monday)
       .ToString();
+      console.log(caml);
     lists.getItems(thankYouList, caml).then(data => {
       const result = helper.enumerator(data.targetListItems);
       resolve(result);
