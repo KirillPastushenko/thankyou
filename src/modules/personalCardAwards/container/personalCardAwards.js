@@ -12,7 +12,6 @@ class PersonalCardAwards extends PureComponent {
   }
   render() {
     const { awards, userListId } = this.props;
-    console.log(awards[userListId]);
     return (
       <Fragment>
         <h5>НАГРАДЫ:</h5>

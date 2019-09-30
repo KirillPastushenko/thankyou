@@ -1,11 +1,12 @@
-import React, { PureComponent, Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { getAllThanks, getWeekThanks } from "../../actions";
+import { addThankYouIdle } from "../../../../actions";
 import moment from "moment";
 import { maxBonusToSend } from "../../../../constants/config";
 import { selectAll, selectMonth, selectToday } from "../../selectors";
 
-class PersonCardThanks extends PureComponent {
+class PersonCardThanks extends Component {
   state = {};
   componentDidMount() {
     const { getAllThanks, getWeekThanks, userListId } = this.props;
@@ -18,18 +19,19 @@ class PersonCardThanks extends PureComponent {
   }
   componentDidUpdate() {
     const { addThankYouStatus, userListId, getWeekThanks } = this.props;
+    console.log("addThankYouStatus", addThankYouStatus);
     if (addThankYouStatus === "SUCCESS") {
       const today = moment();
       const dayFromMonday = today.isoWeekday();
       const monday =
         today.subtract(dayFromMonday, "days").format("YYYY-MM-DD") +
         "T14:00:00Z";
+      console.log("userListId", userListId);
       getWeekThanks({ userListId, monday });
     }
   }
   render() {
     const { userListId, count, all, month, today } = this.props;
-    console.log(all);
     return (
       <Fragment>
         <h5>БЛАГОДАРНОСТИ:</h5>

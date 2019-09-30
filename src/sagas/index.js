@@ -1,6 +1,4 @@
 import { fork } from "redux-saga/effects";
-import { userWatcher } from "./user";
-import { phoneBookWatcher } from "./phonebook";
 import { addThankYouWatcher } from "./addThankYou";
 
 // MODULES
@@ -14,8 +12,6 @@ import { awardsWatcher } from "../modules/personalCardAwards";
 
 export default function*() {
   yield fork(addThankYouWatcher);
-  yield fork(userWatcher);
-  yield fork(phoneBookWatcher);
 
   //MODULES
   yield fork(peopleWatcher);

@@ -66,6 +66,7 @@ class Form extends PureComponent {
           name="AppNomination"
           listTitle="AppNominations"
           onChange={this.handleChange}
+          value={form.AppNomination}
         />
         <PeoplePicker />
         <Textarea name="AppText" onChange={this.handleChange} />
@@ -79,7 +80,7 @@ class Form extends PureComponent {
             Отправить
           </button>
         </div>
-      </Fragment>  
+      </Fragment>
     );
   }
 }

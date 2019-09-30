@@ -23,7 +23,6 @@ export const getWeekThanksRequest = payload => {
       .DateTimeField("Created")
       .GreaterThanOrEqualTo(payload.monday)
       .ToString();
-      console.log(caml);
     lists.getItems(thankYouList, caml).then(data => {
       const result = helper.enumerator(data.targetListItems);
       resolve(result);
