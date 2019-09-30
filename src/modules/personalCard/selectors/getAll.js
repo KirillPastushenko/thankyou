@@ -1,0 +1,1 @@
+export const getAll = state => state.modules.thanks.all;

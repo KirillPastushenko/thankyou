@@ -1,0 +1,1 @@
+export { userInfoWatcher } from "./userInfoWatcher";

@@ -1,0 +1,22 @@
+.person-photo > .person {
+  transform: scale(0) translateX(calc(-50% + 35px));
+  position: absolute;
+}
+.person-photo {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #731515;
+  text-align: left;
+  margin-right: 17px;
+  background-color: #ddd;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+.person-photo > img {
+  width: 100%;
+  height: auto;
+}

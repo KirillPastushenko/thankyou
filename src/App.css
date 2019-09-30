@@ -155,9 +155,6 @@ h5{ font-family: 'Effra_Medium';text-align: center;color: #1D1D1B;font-size: 16p
 .flex-l-c{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-items: center;align-content: stretch;}
 .flex-spb-c{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: center;align-content: stretch;}
 .flex-c-c{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;align-items: center;align-content: stretch;}
-.person-photo>.person{transform: scale(0) translateX(calc(-50% + 35px));position: absolute}
-.person-photo {position: relative;width: 70px;height: 70px;border-radius: 50%;background-color: #731515;text-align: left;margin-right: 17px;background-image: url('images/pers0.jpg');background-size: cover;background-repeat: no-repeat;background-position: center;}
-.person-photo >img{width: 100%; height: auto}
 .person-name{ font-family: 'Effra_Regular';font-size: 18px;letter-spacing: 0.01em;}
 .person-data{font-family: 'Effra_Regular'; font-style: italic; font-size: 11px;text-transform: uppercase;letter-spacing: 0.07em;margin-top: 7px;}
 .person-job{padding-right: 4px;}

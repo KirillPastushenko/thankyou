@@ -4,17 +4,20 @@ const {
   getUserListId,
   getUserListIdSuccess,
   getUserListIdFailure,
-  getUserListIdIdle
+  getUserListIdIdle,
+  setUserIdToList
 } = createActions(
   "GET_USER_LIST_ID",
   "GET_USER_LIST_ID_SUCCESS",
   "GET_USER_LIST_ID_FAILURE",
-  "GET_USER_LIST_ID_IDLE"
+  "GET_USER_LIST_ID_IDLE",
+  "SET_USER_ID_TO_LIST"
 );
 
 export {
   getUserListId,
   getUserListIdSuccess,
   getUserListIdFailure,
-  getUserListIdIdle
+  getUserListIdIdle,
+  setUserIdToList
 };

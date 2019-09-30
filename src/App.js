@@ -1,61 +1,61 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import history from "./history";
 import { connect } from "react-redux";
 import { Default } from "./pages";
-import { Layout } from "antd";
 import Form from "./components/form";
-import Footer from "./components/footer"
+import Footer from "./components/footer";
 import ThanksHeader from "./components/header";
-import PersonCard from "./components/personcard"
-import * as userActions from "./actions/user";
-import "antd/dist/antd.css";
+import { PersonalCard } from "./modules/personalCard";
+import { UserInfo } from "./modules/userInfo";
 import "./App.css";
 import { getUserListId } from "./modules/getUserListId/actions";
-import PersonCardThanks from "./components/personcardthanks";
-const { Header, Content } = Layout;
-const { getUser } = userActions;
+
 class App extends Component {
   componentDidMount() {
-    const { getUser, getUserListId } = this.props;
-    getUser();
+    const { getUserListId } = this.props;
     getUserListId();
   }
-  render() {   
+  render() {
+    const { userId } = this.props;
     return (
-      <Layout> 
+      <Fragment>
+        <UserInfo />
         <section id="thanks-top">
           <ThanksHeader history={history} />
-          <div id="thanks-form" > 
+          <div id="thanks-form">
             <div className="container">
               <div className="flex-spb-t">
                 <div className="col-6 first">
-                  <h1>Отправь благодарность коллеге<br/><span>Скажи спасибо</span></h1>
+                  <h1>
+                    Отправь благодарность коллеге
+                    <br />
+                    <span>Скажи спасибо</span>
+                  </h1>
                   <Form />
                 </div>
                 <div className="col-6">
                   <div id="my">
                     <div className="head-green angle-right">
-                        <h4>ЛИЧНЫЙ КАБИНЕТ</h4>
+                      <h4>ЛИЧНЫЙ КАБИНЕТ</h4>
                     </div>
-                    <PersonCard />
+                    {userId && <PersonalCard userId={userId} />}
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
+        </section>
 
-        </section>  
-      
-
-        <Default/>
-        <Footer/>  
-      </Layout>
-       
+        <Default />
+        <Footer />
+      </Fragment>
     );
   }
 }
 
 export default connect(
-  state => ({}),
-  { getUser, getUserListId }
+  state => ({
+    userId: state.modules.usersInfo.currentUser.userId
+  }),
+  { getUserListId }
 )(App);

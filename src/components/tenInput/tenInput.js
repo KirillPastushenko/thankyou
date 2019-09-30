@@ -1,4 +1,5 @@
 import React, { PureComponent, Fragment } from "react";
+import { connect } from "react-redux";
 import "./tenInput.css";
 import { maxBonusToSend } from "../../constants/config";
 
@@ -13,26 +14,31 @@ class TenInput extends PureComponent {
   };
   handleMinus = () => {
     let { value } = this.state;
+    const { count } = this.props;
     value = parseInt(value);
     if (!value) value = 1;
     value -= 1;
     if (value < 1) value = 1;
+    if (count === maxBonusToSend) value = 0;
     const { onChange, name } = this.props;
     onChange(name, value);
     this.setState({ value });
   };
   handlePlus = () => {
     let { value } = this.state;
+    const { count } = this.props;
     value = parseInt(value);
     if (!value) value = 1;
     value += 1;
-    if (value > maxBonusToSend) value = maxBonusToSend;
+    if (value > maxBonusToSend - count) value = maxBonusToSend - count;
     const { onChange, name } = this.props;
     onChange(name, value);
     this.setState({ value });
   };
   render() {
-    const { value } = this.state;
+    let { value } = this.state;
+    const { count } = this.props;
+    if (count === maxBonusToSend) value = 0;
     return (
       <Fragment>
         <div className="tenInput">
@@ -49,4 +55,9 @@ class TenInput extends PureComponent {
   }
 }
 
-export default TenInput;
+export default connect(
+  state => ({
+    count: state.modules.thanks.count
+  }),
+  {}
+)(TenInput);

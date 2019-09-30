@@ -4,7 +4,8 @@ import {
   getUserListId,
   getUserListIdSuccess,
   getUserListIdFailure,
-  getUserListIdIdle
+  getUserListIdIdle,
+  setUserIdToList
 } from "../actions";
 
 const list = handleActions(
@@ -19,18 +20,27 @@ const list = handleActions(
   },
   {}
 );
+const idToList = handleActions(
+  {
+    [setUserIdToList]: (state, action) => {
+      return { ...state, ...action.payload };
+    }
+  },
+  {}
+);
 const status = handleActions(
   {
-    [getUserListIdSuccess]: (state, action) => "SUCCESS",
-    [getUserListId]: (state, action) => "LOADING",
-    [getUserListIdFailure]: (state, action) => "FAILURE",
-    [getUserListIdIdle]: (state, action) => "IDLE"
+    [getUserListIdSuccess]: () => "SUCCESS",
+    [getUserListId]: () => "LOADING",
+    [getUserListIdFailure]: () => "FAILURE",
+    [getUserListIdIdle]: () => "IDLE"
   },
   "IDLE"
 );
 
 const users = combineReducers({
   status,
+  idToList,
   list
 });
 

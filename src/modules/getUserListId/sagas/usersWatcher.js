@@ -2,8 +2,10 @@ import { call, takeEvery, put } from "redux-saga/effects";
 import {
   getUserListId,
   getUserListIdSuccess,
-  getUserListIdFailure
+  getUserListIdFailure,
+  setUserIdToList
 } from "../actions";
+import { setCurrentUserInfo, addUsersToRequest } from "../../userInfo/actions";
 import {
   getUserByAccountNameRequest,
   getCurrentRequest,
@@ -19,17 +21,30 @@ function* getUserSaga(action) {
     if (!payload) {
       const curUser = yield call(getCurrentRequest);
       userId = curUser.userId;
+      // userId = 5698;
       title = curUser.title;
+      yield put(setCurrentUserInfo({ userId }));
+      yield put(addUsersToRequest([userId]));
     } else {
-      const user = yield call(getUserByAccountNameRequest, payload);
-      userId = user.userId;
-      title = user.title;
+      if (!parseInt(payload)) {
+        const user = yield call(getUserByAccountNameRequest, payload);
+        userId = user.userId;
+        title = user.title;
+      } else {
+        userId = parseInt(payload); 
+      }
     }
     let userListId = yield call(getListItemByUserIdRequest, userId);
     if (!userListId) {
       userListId = yield call(addListItemByUserRequest, { userId, title });
     }
-    yield put(getUserListIdSuccess({ to: payload, id: userListId, title }));
+    if (!payload) {
+      yield put(setCurrentUserInfo({ userListId, title }));
+    }
+    yield put(setUserIdToList({ [userId]: userListId }));
+    if (title) {
+      yield put(getUserListIdSuccess({ to: payload, id: userListId, title }));
+    }
   } catch (error) {
     console.log(error);
     yield put(getUserListIdFailure(error));

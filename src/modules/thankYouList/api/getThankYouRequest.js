@@ -9,11 +9,12 @@ let viewFields = [
   "ID",
   "Title",
   "AppFrom",
-  "AppFromScores",
+  "AppFromUserId",
+  "AppToUserId",
   "AppNomination",
   "AppScores",
   "AppText",
-  "AppTo"
+  "AppTo",
 ];
 
 export const getThankYouRequest = payload => {
@@ -21,16 +22,16 @@ export const getThankYouRequest = payload => {
     const camlBuilder = new CamlBuilder();
     const caml = camlBuilder
       .View(viewFields)
-      .LeftJoin("AppFrom", "AppUsers")
-      .Select("AppScores", "AppFromScores")
+      .LeftJoin("AppFrom", "AppFrom")
+      .Select("AppUserId", "AppFromUserId")
+      .LeftJoin("AppTo", "AppTo")
+      .Select("AppUserId", "AppToUserId")
       .Scope(CamlBuilder.ViewScope.RecursiveAll)
       .RowLimit(rowLimit)
       .Query()
       .ToString();
-    console.log(caml);
     lists.getItems(thankYouList, caml).then(data => {
       const result = helper.enumerator(data.targetListItems);
-      console.log(result);
       resolve(result);
     });
   });

@@ -4,8 +4,8 @@ import { PeoplePicker } from "../../modules/peoplePicker";
 import { Select } from "../../modules/select";
 import Textarea from "../textarea";
 import TenInput from "../tenInput";
-import PhoneSearch from "../search";
 import { addThankYou } from "../../actions";
+import { maxBonusToSend } from "../../constants/config";
 
 import "./form.css";
 
@@ -14,23 +14,23 @@ class Form extends PureComponent {
     form: {
       AppTo: null,
       AppText: "",
-      AppScores: 0,
+      AppScores: 1,
       AppFrom: null,
       AppNomination: null,
       Title: ""
     }
   };
   static getDerivedStateFromProps(props, state) {
-    const { users } = props;
+    const { users, count } = props;
     let { form } = state;
     if (users.from) form = { ...form, AppFrom: users.from.id };
     if (users.to) form = { ...form, AppTo: users.to.id };
+    if (maxBonusToSend == count) form = { ...form, AppScores: 0 };
     return { form };
   }
   handleChange = (name, value) => {
     let { form } = this.state;
     form = { ...form, [name]: value };
-    console.log(form);
     this.setState({ form });
   };
   handleSubmit = e => {
@@ -43,21 +43,27 @@ class Form extends PureComponent {
     addThankYou(form);
   };
   render() {
+    const { form } = this.state;
+    const { AppScores } = form;
     return (
       <Fragment>
-          <Select
-            name="AppNomination"
-            listTitle="AppNominations" 
-            onChange={this.handleChange}
-          />
-          <PhoneSearch {...this.props}></PhoneSearch>
-          <PeoplePicker />
-
-          <Textarea name="AppText" onChange={this.handleChange} />
-          <div className="flex-spb-c">
-            <TenInput name="AppScores" onChange={this.handleChange} />
-            <button id="thanks-submit" onClick={this.handleSubmit}>Отправить</button>
-          </div>
+        <Select
+          name="AppNomination"
+          listTitle="AppNominations"
+          onChange={this.handleChange}
+        />
+        <PeoplePicker />
+        <Textarea name="AppText" onChange={this.handleChange} />
+        <div className="flex-spb-c">
+          <TenInput name="AppScores" onChange={this.handleChange} />
+          <button
+            id="thanks-submit"
+            disabled={!AppScores && "true"}
+            onClick={this.handleSubmit}
+          >
+            Отправить
+          </button>
+        </div>
       </Fragment>
     );
   }
@@ -65,7 +71,8 @@ class Form extends PureComponent {
 
 export default connect(
   state => ({
-    users: state.modules.users.list
+    users: state.modules.users.list,
+    count: state.modules.thanks.count
   }),
   { addThankYou }
 )(Form);
