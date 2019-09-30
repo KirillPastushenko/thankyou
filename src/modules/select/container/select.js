@@ -6,26 +6,16 @@ import { getSelectData } from "../actions";
 import { selectOptions } from "../selectors";
 
 class Select extends PureComponent {
-  state = {
-    value: null
-  };
   componentDidMount() {
     const { getSelectData, listTitle } = this.props;
     getSelectData(listTitle);
   }
   handleChange = option => {
-    this.setState({ value: option });
     const { onChange, name } = this.props;
-    onChange(name, option.value);
+    onChange(name, option);
   };
-  componentWillUpdate() {
-    const { reset } = this.props;
-    if (reset) {
-    }
-  }
   render() {
-    const { value } = this.state;
-    const { options, listTitle } = this.props;
+    const { options, listTitle, value } = this.props;
     let selectOptions = [];
     if (options && options[listTitle]) {
       selectOptions = options[listTitle];
@@ -35,6 +25,7 @@ class Select extends PureComponent {
         value={value}
         onChange={this.handleChange}
         options={selectOptions}
+        placeholder="Выберите номинацию"
       />
     );
   }

@@ -9,19 +9,11 @@ class ThankYouItem extends Component {
         <div className="thx-news-item th10693">
           <div className="flex-spb-c">
             <div className="badge flex-l-c">
-              <Avatar userId={children.fromUserId} />
-              <div className="preson-info">
-                <div className="person-name">{children.from}</div>
-              </div>
+              <Avatar userId={children.fromUserId} title={children.from}/>
             </div>
 
             <div className="badge flex-l-c ">
-              <Avatar userId={children.toUserId} />
-              <div className="preson-info">
-                <div className="person-name">
-                  <span className="toName">{children.to}</span>
-                </div>
-              </div>
+              <Avatar userId={children.toUserId} title={children.to}/>
             </div>
           </div>
           <div className="comment">{children.text}</div>

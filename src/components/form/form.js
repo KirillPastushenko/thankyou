@@ -51,10 +51,12 @@ class Form extends PureComponent {
   handleSubmit = e => {
     e.preventDefault();
     let { form } = this.state;
+
     //тут нужна валидация form
     const { addThankYou, users } = this.props;
     if (users.from && users.to)
       form = { ...form, Title: users.from.title + " to " + users.to.title };
+    form.AppNomination = form.AppNomination.value;
     addThankYou(form);
   };
   render() {
@@ -68,10 +70,18 @@ class Form extends PureComponent {
           onChange={this.handleChange}
           value={form.AppNomination}
         />
-        <PeoplePicker />
-        <Textarea name="AppText" onChange={this.handleChange} />
+        <PeoplePicker value={form.AppTo} />
+        <Textarea
+          name="AppText"
+          onChange={this.handleChange}
+          value={form.AppText}
+        />
         <div className="flex-spb-c">
-          <TenInput name="AppScores" onChange={this.handleChange} />
+          <TenInput
+            name="AppScores"
+            onChange={this.handleChange}
+            value={form.AppScores}
+          />
           <button
             id="thanks-submit"
             disabled={!AppScores && "true"}

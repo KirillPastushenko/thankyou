@@ -18,7 +18,7 @@ const getSuggestions = (value, people) => {
         return item.name.toLowerCase().indexOf(inputValue) > -1;
       });
 };
- 
+
 class Autocomplete extends Component {
   constructor() {
     super();

@@ -4,16 +4,12 @@ import "./tenInput.css";
 import { maxBonusToSend } from "../../constants/config";
 
 class TenInput extends PureComponent {
-  state = {
-    value: 1
-  };
   handleChange = e => {
     const { onChange, name } = this.props;
     onChange(name, e.target.value);
-    this.setState({ value: e.target.value });
   };
   handleMinus = () => {
-    let { value } = this.state;
+    let { value } = this.props;
     const { count } = this.props;
     value = parseInt(value);
     if (!value) value = 1;
@@ -22,22 +18,18 @@ class TenInput extends PureComponent {
     if (count === maxBonusToSend) value = 0;
     const { onChange, name } = this.props;
     onChange(name, value);
-    this.setState({ value });
   };
   handlePlus = () => {
-    let { value } = this.state;
-    const { count } = this.props;
+    let { count, value } = this.props;
     value = parseInt(value);
     if (!value) value = 1;
     value += 1;
     if (value > maxBonusToSend - count) value = maxBonusToSend - count;
     const { onChange, name } = this.props;
     onChange(name, value);
-    this.setState({ value });
   };
   render() {
-    let { value } = this.state;
-    const { count } = this.props;
+    let { count, value } = this.props;
     if (count === maxBonusToSend) value = 0;
     return (
       <Fragment>
