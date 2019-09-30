@@ -40,38 +40,6 @@ body {font-family: 'Effra_Regular';}
 footer .footer {background-color:#1D1D1B;color:#fff;text-align: center;padding: 40px;font-family: 'Effra_Regular';margin-top: 55px;}
 
 
-
-@font-face {
-    font-family: 'Effra_Bold';
-    src: url('fonts/Effra_W_Bd.eot');
-    src: url('fonts/Effra_W_Bd.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Effra_W_Bd.woff2') format('woff2'),
-         url('fonts/Effra_W_Bd.woff') format('woff');
-    font-weight: normal;
-    font-style: normal; 
-}
-
-
-@font-face {
-    font-family: 'Effra_Medium';
-    src: url('fonts/Effra_W_Md.eot');
-    src: url('fonts/Effra_W_Md.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Effra_W_Md.woff2') format('woff2'),
-         url('fonts/Effra_W_Md.woff') format('woff');
-    font-weight: normal;
-    font-style: normal; 
-}
-
-@font-face {
-    font-family: 'Effra_Regular';
-    src: url('fonts/Effra_W_Rg.eot');
-    src: url('fonts/Effra_W_Rg.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Effra_W_Rg.woff') format('woff'),
-         url('fonts/Effra_W_Rg.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal; 
-}
-
 :focus{outline: 0 none;}
 * {box-sizing:border-box}
 body {font-family: 'Effra_Regular';overflow-x: hidden}

@@ -1,8 +1,5 @@
 import { combineReducers } from "redux";
-import { user } from "./user";
-import { phonebook } from "./phonebook";
 import { status } from "./status";
-import { search } from "./search";
 
 //MODULES
 import { peoplePicker } from "../modules/peoplePicker";
@@ -24,9 +21,6 @@ const modules = combineReducers({
 });
 
 export default combineReducers({
-  user,
-  phonebook,
   status,
-  search,
   modules
 });
