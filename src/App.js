@@ -31,7 +31,7 @@ class App extends Component {
                     <br />
                     <span>Скажи спасибо</span>
                   </h1>
-                  <Form />
+                  <Form />                  
                 </div>
                 <div className="col-6">
                   <div id="my">
@@ -40,11 +40,11 @@ class App extends Component {
                     </div>
                     {userId && <PersonalCard userId={userId} />}
                   </div>
-                </div>
-              </div>
+                </div>  
+              </div> 
             </div>
           </div>
-        </section>
+        </section> 
 
         <Default />
         <Footer />
