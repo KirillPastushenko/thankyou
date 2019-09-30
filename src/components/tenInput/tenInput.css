@@ -1,8 +1,9 @@
-#thanks-form .tenInput input{margin-bottom: 0;border:none;text-transform: uppercase;font-family: 'Effra_Bold';color: #D1121D;background-color: #fff;font-size: 36px;letter-spacing: 0.03em;width: 100%;border-radius: 35px;text-align: center;}
+#thanks-form .tenInput input{margin-bottom: 0;padding-bottom: 2px;border:none;text-transform: uppercase;font-family: 'Effra_Bold';color: #D1121D;background-color: #fff;font-size: 36px;letter-spacing: 0.03em;width: 100%;border-radius: 35px;text-align: center;}
 .tenInput{position: relative;width: 134px;}
 .btn-counter{transition: .15s;border:none;color: #ccc;position: absolute;background-color: #f3f3f3;width: 21px;height: 21px;text-align: center;border-radius: 50%;cursor: pointer;}
 .btn-counter.plus{right: 16px;top: 13px;line-height: 18px;}
 .btn-counter.minus{top: 13px;left: 13px;line-height: 19px;font-size: 21px;}
 .btn-counter:hover{color:#000}
+ 
 
 
