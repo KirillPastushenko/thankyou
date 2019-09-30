@@ -3,14 +3,16 @@ import { combineReducers } from "redux";
 import {
   getThankYou,
   getThankYouSuccess,
-  getThankYouFailure
+  getThankYouFailure,
+  getThankYouIdle
 } from "../actions";
 
 const status = handleActions(
   {
-    [getThankYouSuccess]: (state, action) => "SUCCESS",
-    [getThankYou]: (state, action) => "LOADING",
-    [getThankYouFailure]: (state, action) => "FAILURE"
+    [getThankYouSuccess]: () => "SUCCESS",
+    [getThankYou]: () => "LOADING",
+    [getThankYouFailure]: () => "FAILURE",
+    [getThankYouIdle]: () => "IDLE"
   },
   "IDLE"
 );

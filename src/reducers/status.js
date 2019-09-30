@@ -1,45 +1,23 @@
 import { handleActions } from "redux-actions";
 import { combineReducers } from "redux";
 import {
-  getPhoneBook,
-  getPhoneBookFailure,
-  getPhoneBookSuccess,
-  getUser,
-  getUserFailure,
-  getUserSuccess,
-  searchPhoneBook,
-  searchPhoneBookSuccess,
-  searchPhoneBookFailure
+  addThankYou,
+  addThankYouSuccess,
+  addThankYouFailure,
+  addThankYouIdle
 } from "../actions";
 
-const phoneBookStatus = handleActions(
+const addThankYouStatus = handleActions(
   {
-    [getPhoneBook]: () => "LOADING",
-    [getPhoneBookSuccess]: () => "SUCCESS",
-    [getPhoneBookFailure]: () => "FAILURE"
-  },
-  "IDLE"
-);
-const searchPhoneBookStatus = handleActions(
-    {
-      [searchPhoneBook]: () => "LOADING",
-      [searchPhoneBookSuccess]: () => "SUCCESS",
-      [searchPhoneBookFailure]: () => "FAILURE"
-    },
-    "IDLE"
-  );
-const userStatus = handleActions(
-  {
-    [getUser]: () => "LOADING",
-    [getUserSuccess]: () => "SUCCESS",
-    [getUserFailure]: () => "FAILURE"
+    [addThankYou]: () => "LOADING",
+    [addThankYouSuccess]: () => "SUCCESS",
+    [addThankYouFailure]: () => "FAILURE",
+    [addThankYouIdle]: () => "IDLE"
   },
   "IDLE"
 );
 
 const status = combineReducers({
-  phoneBookStatus,
-  searchPhoneBookStatus,
-  userStatus
+  addThankYouStatus
 });
 export { status };

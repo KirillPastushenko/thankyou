@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import "./thankYouList.css";
-import { getThankYou } from "../actions";
+import { getThankYou, getThankYouIdle } from "../actions";
 import { addUsersToRequest } from "../../userInfo/actions";
 import { selectThankYou } from "../selectors";
 import ThankYouItem from "../components/thankYouItem";
@@ -12,8 +12,10 @@ class ThankYouList extends Component {
     getThankYou();
   }
   componentDidUpdate() {
-    const { addUsersToRequest, thankYou } = this.props;
-    console.log("ThankYouList: ", thankYou);
+    const { addUsersToRequest, thankYou, status, getThankYouIdle } = this.props;
+    if (status === "SUCCESS") {
+      getThankYouIdle();
+    }
     let usersRequests = [];
     if (thankYou.length > 0) {
       thankYou.map(item => {
@@ -50,7 +52,8 @@ class ThankYouList extends Component {
 
 export default connect(
   state => ({
-    thankYou: selectThankYou(state)
+    thankYou: selectThankYou(state),
+    status: state.modules.thankYou.status
   }),
-  { getThankYou, addUsersToRequest }
+  { getThankYou, getThankYouIdle, addUsersToRequest }
 )(ThankYouList);

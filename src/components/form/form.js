@@ -4,7 +4,7 @@ import { PeoplePicker } from "../../modules/peoplePicker";
 import { Select } from "../../modules/select";
 import Textarea from "../textarea";
 import TenInput from "../tenInput";
-import { addThankYou } from "../../actions";
+import { addThankYou, addThankYouIdle } from "../../actions";
 import { maxBonusToSend } from "../../constants/config";
 
 import "./form.css";
@@ -27,6 +27,21 @@ class Form extends PureComponent {
     if (users.to) form = { ...form, AppTo: users.to.id };
     if (maxBonusToSend == count) form = { ...form, AppScores: 0 };
     return { form };
+  }
+  componentDidUpdate() {
+    const { addThankYouStatus, addThankYouIdle } = this.props;
+    if (addThankYouStatus === "SUCCESS") {
+      const form = {
+        AppTo: null,
+        AppText: "",
+        AppScores: 1,
+        AppFrom: null,
+        AppNomination: null,
+        Title: ""
+      };
+      this.setState({ form });
+      addThankYouIdle();
+    }
   }
   handleChange = (name, value) => {
     let { form } = this.state;
@@ -72,7 +87,8 @@ class Form extends PureComponent {
 export default connect(
   state => ({
     users: state.modules.users.list,
-    count: state.modules.thanks.count
+    count: state.modules.thanks.count,
+    addThankYouStatus: state.status.addThankYouStatus
   }),
-  { addThankYou }
+  { addThankYou, addThankYouIdle }
 )(Form);

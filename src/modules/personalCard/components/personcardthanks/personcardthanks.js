@@ -11,12 +11,21 @@ class PersonCardThanks extends PureComponent {
     const { getAllThanks, getWeekThanks, userListId } = this.props;
     const today = moment();
     const dayFromMonday = today.isoWeekday();
-    const monday = today
-      .subtract(dayFromMonday, "days")
-      .format("YYYY-MM-DD") + "T14:00:00Z";
-    console.log(monday)
+    const monday =
+      today.subtract(dayFromMonday, "days").format("YYYY-MM-DD") + "T14:00:00Z";
     getAllThanks(userListId);
     getWeekThanks({ userListId, monday });
+  }
+  componentDidUpdate() {
+    const { addThankYouStatus, userListId, getWeekThanks } = this.props;
+    if (addThankYouStatus === "SUCCESS") {
+      const today = moment();
+      const dayFromMonday = today.isoWeekday();
+      const monday =
+        today.subtract(dayFromMonday, "days").format("YYYY-MM-DD") +
+        "T14:00:00Z";
+      getWeekThanks({ userListId, monday });
+    }
   }
   render() {
     const { userListId, count, all, month, today } = this.props;
@@ -63,7 +72,8 @@ export default connect(
     count: state.modules.thanks.count,
     today: selectToday(state),
     month: selectMonth(state),
-    all: selectAll(state)
+    all: selectAll(state),
+    addThankYouStatus: state.status.addThankYouStatus
   }),
   {
     getAllThanks,
