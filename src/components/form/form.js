@@ -79,7 +79,7 @@ class Form extends PureComponent {
             Отправить
           </button>
         </div>
-      </Fragment>
+      </Fragment>  
     );
   }
 }
