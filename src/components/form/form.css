@@ -10,6 +10,7 @@
 #thanks-form .first{position: relative;}
 #thanks-form [class$="control"]{border-color: transparent;height: 46px;background-color: transparent;border: none;box-shadow: none;border-radius: 0; border-bottom: solid 1px #fff;margin-bottom: 25px;}
 #thanks-form [class$="control"]>div{padding-left: 0;}
+#thanks-form [class$="control"] path{fill:#fff;}
 #thanks-form [class$="indicatorSeparator"] {display:none}
 #thanks-form [class$="singleValue"] {color:#fff; font-size: 18px;margin-left: 0;}
 #thanks-form [class$="placeholder"] {color:#fff; font-size: 18px;margin-left: 0;}
