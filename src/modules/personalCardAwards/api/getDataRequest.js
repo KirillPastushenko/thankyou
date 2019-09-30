@@ -8,7 +8,6 @@ let viewFields = ["ID", "Title", "AppBadge", "AppBadgeImage"];
 
 export const getDataRequest = payload => {
   return new Promise((resolve, reject) => {
-    console.log(payload);
     const camlBuilder = new CamlBuilder();
     const caml = camlBuilder
       .View(viewFields)
@@ -24,7 +23,6 @@ export const getDataRequest = payload => {
       .ToString();
     lists.getItems("AppBadgesToUsers", caml).then(data => {
       const result = helper.enumerator(data.targetListItems);
-      console.log("Awards ", result);
       resolve(result);
     });
   });

@@ -8,7 +8,6 @@ const getThankYou = state => state.modules.thankYou.items;
 export const selectThankYou = createSelector(
   [getThankYou],
   items => {
-    console.log(items);
     const retItems = items.map(item => {
       return {
         id: item.ID,

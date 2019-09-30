@@ -4,7 +4,6 @@ class ThankYouItem extends Component {
   state = {};
   render() {
     const { children } = this.props;
-    console.log(children);
     return (
       <Fragment>
         <div className="thx-news-item th10693">

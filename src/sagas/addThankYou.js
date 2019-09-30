@@ -6,7 +6,6 @@ import {
   addThankYouFailure
 } from "../actions";
 import { getThankYou } from "../modules/thankYouList/actions";
-import { getWeekThanks } from "../modules/personalCard/actions";
 
 function* addThankYouSaga(action) {
   try {
@@ -15,7 +14,6 @@ function* addThankYouSaga(action) {
 
     yield put(addThankYouSuccess(response));
     yield put(getThankYou());
-    yield put(getWeekThanks());
   } catch (error) {
     console.log(error);
     yield put(addThankYouFailure(error));

@@ -18,6 +18,11 @@ class Select extends PureComponent {
     const { onChange, name } = this.props;
     onChange(name, option.value);
   };
+  componentWillUpdate() {
+    const { reset } = this.props;
+    if (reset) {
+    }
+  }
   render() {
     const { value } = this.state;
     const { options, listTitle } = this.props;
