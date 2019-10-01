@@ -11,7 +11,7 @@ main,
 nav,
 section,
 summary {
-  display: block;
+  display: block; 
 }
 audio,
 canvas,
@@ -23,14 +23,14 @@ audio:not([controls]) {
   height: 0;
 }
 [hidden] {
-  display: none;
+  display: none; 
 }
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body {
+body {   
   margin: 0;
 }
 a:focus {

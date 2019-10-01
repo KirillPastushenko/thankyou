@@ -22,7 +22,7 @@ class PersonCard extends PureComponent {
                 <span className="person-loc">
                   {usersInfo && usersInfo.office}
                 </span>
-              </div>
+              </div> 
             </div>
           </div>
           {userListId && (

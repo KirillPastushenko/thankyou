@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     const { userId } = this.props;
     return (
-      <Fragment>
+      <Fragment> 
         <UserInfo />
         <section id="thanks-top">
           <ThanksHeader history={history} />
@@ -59,3 +59,4 @@ export default connect(
   }),
   { getUserListId }
 )(App);
+ 
