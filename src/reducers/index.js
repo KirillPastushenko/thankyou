@@ -9,6 +9,9 @@ import { thankYou } from "../modules/thankYouList";
 import { usersInfo } from "../modules/userInfo";
 import { thanks } from "../modules/personalCard";
 import { awards } from "../modules/personalCardAwards";
+import { who } from "../modules/who";
+import { whom } from "../modules/whom";
+import { like } from "../modules/likes";
 
 const modules = combineReducers({
   peoplePicker,
@@ -17,7 +20,10 @@ const modules = combineReducers({
   thankYou,
   usersInfo,
   thanks,
-  awards
+  awards,
+  who,
+  whom,
+  like
 });
 
 export default combineReducers({

@@ -28,7 +28,7 @@ class ThankYouList extends Component {
     }
   }
   render() {
-    const { thankYou } = this.props;
+    const { thankYou, currentUserId } = this.props;
     return (
       <Fragment>
         <div id="thx-news" className="col-8">
@@ -38,7 +38,9 @@ class ThankYouList extends Component {
           <div className="thanks here">
             {thankYou &&
               thankYou.map(item => (
-                <ThankYouItem key={item.id}>{item}</ThankYouItem>
+                <ThankYouItem key={item.id} userId={currentUserId}>
+                  {item}
+                </ThankYouItem>
               ))}
           </div>
           {/* <div id="thx-news-more" className="btn-more all">
@@ -53,7 +55,8 @@ class ThankYouList extends Component {
 export default connect(
   state => ({
     thankYou: selectThankYou(state),
-    status: state.modules.thankYou.status
+    status: state.modules.thankYou.status,
+    currentUserId: state.modules.usersInfo.currentUser.userId
   }),
   { getThankYou, getThankYouIdle, addUsersToRequest }
 )(ThankYouList);

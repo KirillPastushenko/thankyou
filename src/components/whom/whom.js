@@ -14,7 +14,7 @@ import BadgeSidebar from  "../badgesidebar";
 						</div>
 					</div>
 					<div className="whom reduced">
-						<BadgeSidebar/>
+						{/* <BadgeSidebar/> */}
 					</div>
 					{/* <div id="thx-whom-more" className="btn-more">ЕЩЁ...</div> */}
 				</div>

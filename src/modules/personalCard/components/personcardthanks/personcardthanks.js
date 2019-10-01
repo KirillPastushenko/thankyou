@@ -9,39 +9,43 @@ import { selectAll, selectMonth, selectToday } from "../../selectors";
 class PersonCardThanks extends Component {
   state = {};
   componentDidMount() {
-    const { getAllThanks, getWeekThanks, userListId } = this.props;
+    const { getAllThanks, getWeekThanks, userListId, popup } = this.props;
     const today = moment();
     const dayFromMonday = today.isoWeekday();
     const monday =
       today.subtract(dayFromMonday, "days").format("YYYY-MM-DD") + "T14:00:00Z";
     getAllThanks(userListId);
-    getWeekThanks({ userListId, monday });
-  }
-  componentDidUpdate() {
-    const { addThankYouStatus, userListId, getWeekThanks } = this.props;
-    console.log("addThankYouStatus", addThankYouStatus);
-    if (addThankYouStatus === "SUCCESS") {
-      const today = moment();
-      const dayFromMonday = today.isoWeekday();
-      const monday =
-        today.subtract(dayFromMonday, "days").format("YYYY-MM-DD") +
-        "T14:00:00Z";
-      console.log("userListId", userListId);
+    if (!popup) {
       getWeekThanks({ userListId, monday });
     }
   }
+  componentDidUpdate() {
+    const { addThankYouStatus, userListId, getWeekThanks, popup } = this.props;
+    if (addThankYouStatus === "SUCCESS") {
+      if (!popup) {
+        const today = moment();
+        const dayFromMonday = today.isoWeekday();
+        const monday =
+          today.subtract(dayFromMonday, "days").format("YYYY-MM-DD") +
+          "T14:00:00Z";
+        getWeekThanks({ userListId, monday });
+      }
+    }
+  }
   render() {
-    const { userListId, count, all, month, today } = this.props;
+    const { userListId, count, all, month, today, popup } = this.props;
     return (
       <Fragment>
         <h5>БЛАГОДАРНОСТИ:</h5>
         <div className="flex-spb-t">
-          <div className="flex-col-c-t">
-            <div className="thanks-available num-red">
-              {maxBonusToSend - count}
+          {!popup && (
+            <div className="flex-col-c-t">
+              <div className="thanks-available num-red">
+                {maxBonusToSend - count}
+              </div>
+              <span className="desc">ДОСТУПНО</span>
             </div>
-            <span className="desc">ДОСТУПНО</span>
-          </div>
+          )}
           <div className="flex-col-c-t">
             <div className="thanks-today num-green">{today[userListId]}</div>
             <span className="desc">

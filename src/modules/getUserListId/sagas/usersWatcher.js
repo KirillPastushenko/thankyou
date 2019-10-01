@@ -31,7 +31,7 @@ function* getUserSaga(action) {
         userId = user.userId;
         title = user.title;
       } else {
-        userId = parseInt(payload); 
+        userId = parseInt(payload);
       }
     }
     let userListId = yield call(getListItemByUserIdRequest, userId);
@@ -43,7 +43,14 @@ function* getUserSaga(action) {
     }
     yield put(setUserIdToList({ [userId]: userListId }));
     if (title) {
-      yield put(getUserListIdSuccess({ to: payload, id: userListId, title }));
+      yield put(
+        getUserListIdSuccess({
+          to: payload,
+          id: userListId,
+          title,
+          userId: userId
+        })
+      );
     }
   } catch (error) {
     console.log(error);

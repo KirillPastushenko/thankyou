@@ -1,27 +1,143 @@
-#thanks-submit {border:none;text-transform: uppercase; font-family: 'Effra_Bold';color: #D1121D;background-color: #fff;font-size: 36px;letter-spacing: 0.03em;padding: 2px 97px;border-radius: 34px;text-align: center;}
-#thanks-submit[disabled]{color: #aaa;}
-#thanks-form textarea{margin-bottom: 40px; margin-top: 15px;width: 100%;height: 128px;border: none;background-color: transparent;box-shadow: none;color: #fff;font-size: 18px;font-family: 'Effra_Regular';padding-left: 0;resize: none;border-bottom: solid 1px #fff;}
-#thanks-form input{width: 100%;background-color: transparent;padding-bottom: 7px;border: none;color: #fff;padding-left: 0;font-size: 18px;border-bottom: solid 1px #fff;margin-bottom: 7px;box-shadow: none;font-family: 'Effra_Regular';} 
-#thanks-form .ant-input{padding: 25px 0;}
-::-webkit-input-placeholder {color:#fff;}
-::-moz-placeholder          {color:#fff;} 
-:-moz-placeholder           {color:#fff;} 
-:-ms-input-placeholder      {color:#fff;} 
+#thanks-submit {
+  border: none;
+  text-transform: uppercase;
+  font-family: "Effra_Bold";
+  color: #d1121d;
+  background-color: #fff;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  padding: 2px 97px;
+  border-radius: 34px;
+  text-align: center;
+  transition: 0.3s;
+}
+#thanks-submit:disabled {
+  opacity: 0.5;
+  color: #000;
+}
+#thanks-form textarea {
+  margin-bottom: 40px;
+  margin-top: 15px;
+  width: 100%;
+  height: 128px;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Effra_Regular";
+  padding-left: 0;
+  resize: none;
+  border-bottom: solid 1px #fff;
+}
+#thanks-form .textArea {
+  margin-bottom: 40px;
+  margin-top: 15px;
+  width: 100%;
+  min-height: 128px;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Effra_Regular";
+  padding-left: 0;
+  resize: none;
+  border-bottom: solid 1px #fff;
+}
+#thanks-form input {
+  width: 100%;
+  background-color: transparent;
+  padding-bottom: 7px;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  font-size: 18px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 7px;
+  box-shadow: none;
+  font-family: "Effra_Regular";
+}
+#thanks-form .ant-input {
+  padding: 25px 0;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+:-moz-placeholder {
+  color: #fff;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
 
-#thanks-form .first{position: relative;}
-#thanks-form [class$="control"]{border-color: transparent;height: 46px;background-color: transparent;border: none;box-shadow: none;border-radius: 0; border-bottom: solid 1px #fff;margin-bottom: 25px;}
-#thanks-form [class$="control"]>div{padding-left: 0;}
-#thanks-form [class$="control"] path{fill:#fff;}
-#thanks-form [class$="control"] input{color:transparent}
-#thanks-form [class$="menu"]  {border-radius: 0}
-#thanks-form [class$="indicatorSeparator"] {display:none}
-#thanks-form [class$="singleValue"] {color:#fff; font-size: 18px;margin-left: 0;}
-#thanks-form [class$="placeholder"] {color:#fff; font-size: 18px;margin-left: 0;}
- 
-#react-autowhatever-1{position: absolute;background-color: #fff;z-index: 1;max-height: 250px;width: 100%;overflow-y: scroll;}
-#react-autowhatever-1 ul{list-style: none;padding-left: 0}
-#react-autowhatever-1 li{padding: 10px 0;cursor:pointer;padding-left: 20px} 
-#react-autowhatever-1 li:hover{background-color: #fafafa}  
+#thanks-form .first {
+  position: relative;
+}
+#thanks-form [class$="control"] {
+  border-color: transparent;
+  height: 46px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 25px;
+}
+#thanks-form [class$="control"] > div {
+  padding-left: 0;
+}
+#thanks-form [class$="control"] path {
+  fill: #fff;
+}
+#thanks-form [class$="control"] input {
+  color: transparent;
+}
+#thanks-form [class$="menu"] {
+  border-radius: 0;
+}
+#thanks-form [class$="indicatorSeparator"] {
+  display: none;
+}
+#thanks-form [class$="singleValue"] {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 0;
+}
+#thanks-form [class$="placeholder"] {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 0;
+}
 
-#thanks-form [class$="option"] { background-color: #fff; color:#000;}
-#thanks-form [class$="option"]:hover {background-color: #fafafa}  
+#react-autowhatever-1 {
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  max-height: 250px;
+  width: 100%;
+  overflow-y: scroll;
+}
+#react-autowhatever-1 ul {
+  list-style: none;
+  padding-left: 0;
+}
+#react-autowhatever-1 li {
+  padding: 10px 0;
+  cursor: pointer;
+  padding-left: 20px;
+}
+#react-autowhatever-1 li:hover {
+  background-color: #fafafa;
+}
+
+#thanks-form [class$="option"] {
+  background-color: #fff;
+  color: #000;
+}
+#thanks-form [class$="option"]:hover {
+  background-color: #fafafa;
+}

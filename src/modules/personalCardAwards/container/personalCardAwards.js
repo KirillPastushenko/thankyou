@@ -14,7 +14,9 @@ class PersonalCardAwards extends PureComponent {
     const { awards, userListId } = this.props;
     return (
       <Fragment>
-        <h5>НАГРАДЫ:</h5>
+        {awards[userListId] && awards[userListId].length > 0 && (
+          <h5>НАГРАДЫ:</h5>
+        )}
         {awards[userListId] && (
           <div className="rewards flex-spb-t">
             {awards[userListId].map(item => (

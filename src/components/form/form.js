@@ -11,6 +11,7 @@ import "./form.css";
 
 class Form extends PureComponent {
   state = {
+    disabled: true,
     form: {
       AppTo: null,
       AppText: "",
@@ -39,27 +40,39 @@ class Form extends PureComponent {
         AppNomination: null,
         Title: ""
       };
-      this.setState({ form });
+      this.setState({ form, disabled: true });
       addThankYouIdle();
     }
   }
   handleChange = (name, value) => {
     let { form } = this.state;
+    const { users } = this.props;
+    let { disabled } = this.state;
+    if (
+      users.from &&
+      users.to &&
+      form.AppText.length > 30 &&
+      form.AppScores > 0 &&
+      form.AppNomination
+    ) {
+      disabled = false;
+    } else {
+      disabled = true;
+    }
     form = { ...form, [name]: value };
-    this.setState({ form });
-
+    this.setState({ form, disabled });
   };
   handleSubmit = e => {
     e.preventDefault();
     let { form } = this.state;
-    //тут нужна валидация form 
     const { addThankYou, users } = this.props;
     if (users.from && users.to)
       form = { ...form, Title: users.from.title + " to " + users.to.title };
+    form.AppNomination = form.AppNomination.value;
     addThankYou(form);
   };
   render() {
-    const { form } = this.state;
+    const { form, disabled } = this.state;
     const { AppScores } = form;
     return (
       <Fragment> 
@@ -69,13 +82,21 @@ class Form extends PureComponent {
           onChange={this.handleChange}
           value={form.AppNomination}
         />
-        <PeoplePicker />
-        <Textarea name="AppText" onChange={this.handleChange} />
+        <PeoplePicker value={form.AppTo} />
+        <Textarea
+          name="AppText"
+          onChange={this.handleChange}
+          value={form.AppText}
+        />
         <div className="flex-spb-c">
-          <TenInput name="AppScores" onChange={this.handleChange} />
+          <TenInput
+            name="AppScores"
+            onChange={this.handleChange}
+            value={form.AppScores}
+          />
           <button
             id="thanks-submit"
-            disabled={!AppScores && "true"}
+            disabled={disabled}
             onClick={this.handleSubmit}
           >
             Отправить

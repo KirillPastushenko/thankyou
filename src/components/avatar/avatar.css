@@ -20,3 +20,24 @@
   width: 100%;
   height: auto;
 }
+.badge,
+.person-container {
+  position: relative;
+  cursor: pointer;
+}
+.badge .person {
+  position: absolute;
+  width: 400px;
+  margin-left: -170px;
+  left: 0;
+}
+.peoplePicker .badge .person {
+  margin-left: -199px;
+  top: 27px;
+}
+.preson-info {
+  text-align: left;
+}
+.person-photo {
+  
+}

@@ -1,13 +1,14 @@
-import React from "react"
+import React from "react";
 import { createSelector } from "reselect";
 import Moment from "react-moment";
-import 'moment/locale/ru';
+import "moment/locale/ru";
 
 const getThankYou = state => state.modules.thankYou.items;
 
 export const selectThankYou = createSelector(
   [getThankYou],
   items => {
+    console.log(items);
     const retItems = items.map(item => {
       return {
         id: item.ID,
@@ -22,9 +23,16 @@ export const selectThankYou = createSelector(
         text: item.AppText,
         nomination: item.AppNomination.get_lookupValue(),
         date: <Moment format="DD MMMM YYYY HH:mm">{item.Created}</Moment>,
-        key: item.ID
+        key: item.ID,
+        likedBy:
+          item.LikedBy &&
+          item.LikedBy.map(liker => {
+            return { id: liker.get_lookupId(), name: liker.get_lookupValue() };
+          }),
+        likesCount: item.LikesCount
       };
     });
+    console.log(retItems);
     return retItems;
   }
 );

@@ -15,6 +15,8 @@ let viewFields = [
   "AppScores",
   "AppText",
   "AppTo",
+  "LikedBy",
+  "LikesCount"
 ];
 
 export const getThankYouRequest = payload => {

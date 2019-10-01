@@ -15,7 +15,7 @@ export const selectUserInfo = createSelector(
             title: item.Title,
             jobTitle: item.JobTitle,
             office: item.Office,
-            picture: item.Picture.get_url(),
+            picture: item.Picture && item.Picture.get_url(),
             email: item.EMail
           }
         };

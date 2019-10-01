@@ -6,12 +6,12 @@ import "./personcard.css";
 class PersonCard extends PureComponent {
   state = {};
   render() {
-    const { userId, userListId, usersInfo } = this.props;
+    const { userId, userListId, usersInfo, noHover, popup } = this.props;
     return (
       <Fragment>
         <div className="person">
           <div className="flex-l-c">
-            <Avatar userId={userId} />
+            <Avatar userId={userId} noHover={noHover} />
             <div className="preson-info">
               <div className="person-name">{usersInfo && usersInfo.title}</div>
               <div className="person-data">
@@ -25,7 +25,9 @@ class PersonCard extends PureComponent {
               </div>
             </div>
           </div>
-          {userListId && <PersonCardThanks userListId={userListId} />}
+          {userListId && (
+            <PersonCardThanks userListId={userListId} popup={popup} />
+          )}
           {userListId && <PersonalCardAwards userListId={userListId} />}
         </div>
       </Fragment>

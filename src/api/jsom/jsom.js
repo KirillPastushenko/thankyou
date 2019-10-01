@@ -82,7 +82,7 @@ export const JSOM = function(url) {
                   targetList.get_id().toString()
                 );
               }
-              resolve({targetListItems, targetList});
+              resolve({ targetListItems, targetList });
             },
             (sender, args) => {
               console.log(sender);
@@ -218,6 +218,37 @@ export const JSOM = function(url) {
                   args.get_stackTrace()
               );
               reject(args);
+            }
+          );
+        });
+      },
+      setLike: function(listId, itemId, setLike) {
+        return new Promise((resolve, reject) => {
+          SP.SOD.executeFunc(
+            "reputation.js",
+            "Microsoft.Office.Server.ReputationModel.Reputation",
+            function() {
+              Microsoft.Office.Server.ReputationModel.Reputation.setLike(
+                context,
+                listId,
+                itemId,
+                setLike
+              );
+              context.executeQueryAsync(
+                () => {
+                  resolve();
+                },
+                (sender, args) => {
+                  console.log(sender);
+                  console.log(
+                    "Request failed. " +
+                      args.get_message() +
+                      "\n" +
+                      args.get_stackTrace()
+                  );
+                  reject(args);
+                }
+              );
             }
           );
         });
