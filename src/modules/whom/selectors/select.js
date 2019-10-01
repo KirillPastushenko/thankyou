@@ -9,7 +9,7 @@ export const selectWhom = createSelector(
       return {
         title: item.Title,
         userId: item.AppUserId,
-        rating: item.AppToCount.get_lookupId(),
+        rating: item.AppToCount && item.AppToCount.get_lookupId(),
         key: item.ID,
         id: item.ID
       };

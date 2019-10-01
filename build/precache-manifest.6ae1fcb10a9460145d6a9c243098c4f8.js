@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "410595ac82338593aafd2ee85001a411",
+    "revision": "991957d977e88d93f1d6cfa7c81209e2",
     "url": "/sites/projects-RU-Platform/App/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sites/projects-RU-Platform/App/static/css/2.b0f64131.chunk.css"
   },
   {
-    "revision": "06aab291f26c716cece1",
+    "revision": "800e19c36ce5823224fc",
     "url": "/sites/projects-RU-Platform/App/static/css/main.641ffa9e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sites/projects-RU-Platform/App/static/js/2.932bdf89.chunk.js"
   },
   {
-    "revision": "06aab291f26c716cece1",
-    "url": "/sites/projects-RU-Platform/App/static/js/main.4c04a02d.chunk.js"
+    "revision": "800e19c36ce5823224fc",
+    "url": "/sites/projects-RU-Platform/App/static/js/main.8adbc8e3.chunk.js"
   },
   {
     "revision": "949f98e0c5919fd904fe",
