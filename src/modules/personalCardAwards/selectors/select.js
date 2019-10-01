@@ -9,8 +9,8 @@ export const selectAwards = createSelector(
     Object.keys(items).map(key => {
       retObj[key] = items[key].map(item => {
         return {
-          title: item.AppBadge.get_lookupValue(),
-          image: item.AppBadgeImage.get_lookupValue(),
+          title: item.AppBadge && item.AppBadge.get_lookupValue(),
+          image: item.AppBadgeImage && item.AppBadgeImage.get_lookupValue(),
           key: item.ID
         };
       });
