@@ -47,11 +47,12 @@ class Form extends PureComponent {
     let { form } = this.state;
     form = { ...form, [name]: value };
     this.setState({ form });
+
   };
   handleSubmit = e => {
     e.preventDefault();
     let { form } = this.state;
-    //тут нужна валидация form
+    //тут нужна валидация form 
     const { addThankYou, users } = this.props;
     if (users.from && users.to)
       form = { ...form, Title: users.from.title + " to " + users.to.title };
@@ -61,7 +62,7 @@ class Form extends PureComponent {
     const { form } = this.state;
     const { AppScores } = form;
     return (
-      <Fragment>
+      <Fragment> 
         <Select
           name="AppNomination"
           listTitle="AppNominations"
