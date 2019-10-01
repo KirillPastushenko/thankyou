@@ -1,0 +1,17 @@
+#thx-news .like-icon {
+  margin-bottom: -2px;
+}
+#thx-news .like-icon.red {
+  color: #d1111d;
+}
+#thx-news span.like {
+  cursor: pointer;
+  opacity: 1;
+}
+#thx-news span.like > span {
+  border-bottom: dashed 1px;
+  margin-left: 5px;
+}
+#thx-news span.like > svg {
+    margin-right: 3px;
+  }

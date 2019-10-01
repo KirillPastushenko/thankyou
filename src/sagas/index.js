@@ -11,6 +11,7 @@ import { getThanksWatcher } from "../modules/personalCard";
 import { awardsWatcher } from "../modules/personalCardAwards";
 import { whoWatcher } from "../modules/who";
 import { whomWatcher } from "../modules/whom";
+import { likeWatcher } from "../modules/likes";
 
 export default function*() {
   yield fork(addThankYouWatcher);
@@ -25,4 +26,5 @@ export default function*() {
   yield fork(awardsWatcher);
   yield fork(whoWatcher);
   yield fork(whomWatcher);
+  yield fork(likeWatcher);
 }

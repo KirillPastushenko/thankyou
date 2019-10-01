@@ -5,7 +5,7 @@ import { maxBonusToSend } from "../../constants/config";
 
 class TenInput extends PureComponent {
   handleChange = e => {
-    const { onChange, name } = this.props;
+    const { onChange, name } = this.props; 
     onChange(name, e.target.value);
   };
   handleMinus = () => {

@@ -19,13 +19,15 @@ class PersonalCard extends Component {
     }
   }
   render() {
-    const { usersInfo, userId, idToList } = this.props;
+    const { usersInfo, userId, idToList, popup } = this.props;
     return (
       <Fragment>
         <PersonCard
           userId={userId}
           userListId={idToList[userId]}
           usersInfo={usersInfo[userId]}
+          popup={popup}
+          noHover={true}
         />
       </Fragment>
     );

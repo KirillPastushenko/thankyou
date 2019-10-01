@@ -27,6 +27,17 @@
 }
 .badge .person {
   position: absolute;
-  width: 500px;
-  margin-left: -220px;
+  width: 400px;
+  margin-left: -170px;
+  left: 0;
+}
+.peoplePicker .badge .person {
+  margin-left: -199px;
+  top: 27px;
+}
+.preson-info {
+  text-align: left;
+}
+.person-photo {
+  
 }

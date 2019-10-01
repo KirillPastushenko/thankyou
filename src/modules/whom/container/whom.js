@@ -23,7 +23,6 @@ class Whom extends PureComponent {
         });
       }
       if (usersRequests.length > 0) {
-        console.log("usersRequests", usersRequests);
         addUsersToRequest(usersRequests);
       }
     }

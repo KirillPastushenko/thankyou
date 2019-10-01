@@ -5,7 +5,6 @@ const getWho = state => state.modules.who.items;
 export const selectWho = createSelector(
   [getWho],
   items => {
-    console.log("items", items);
     const retArr = items.map(item => {
       return {
         title: item.Title,

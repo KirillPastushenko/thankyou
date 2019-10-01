@@ -19,7 +19,6 @@ export const searchPhoneBookRequest = action => {
       startRow = payload.position;
     }
     if (!startRow) startRow = 0;
-    console.log(request);
     search
       .text(
         request,

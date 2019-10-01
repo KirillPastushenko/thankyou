@@ -1,0 +1,16 @@
+.peoplePicker {
+  position: relative;
+}
+.peoplePicker .info {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16px;
+  font-size: 15px;
+  cursor: pointer;
+}

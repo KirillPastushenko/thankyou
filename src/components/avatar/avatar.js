@@ -7,10 +7,12 @@ class Avatar extends Component {
     show: false
   };
   handleMouseEnter = e => {
-    this.setState({ show: true });
+    const { noHover } = this.props;
+    if (!noHover) this.setState({ show: true });
   };
   handleMouseLeave = e => {
-    this.setState({ show: false });
+    const { noHover } = this.props;
+    if (!noHover) this.setState({ show: false });
   };
   render() {
     const { usersInfo, userId, title, rating } = this.props;
@@ -18,12 +20,12 @@ class Avatar extends Component {
     return (
       <Fragment>
         <div
-          className="person-container flex-l-c"
+          className={title ? "person-container flex-l-c" : "person-container"}
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseLeave}
         >
           <div className="person-photo">
-            {usersInfo[userId] && (
+            {usersInfo[userId] && usersInfo[userId].Picture && (
               <img src={usersInfo[userId].Picture.get_url()} alt="avatar" />
             )}
           </div>
@@ -33,7 +35,7 @@ class Avatar extends Component {
               <div className="person-name">{title}</div>
             </div>
           )}
-          {show && <PersonalCard userId={userId} />}
+          {show && <PersonalCard userId={userId} popup={true} />}
         </div>
       </Fragment>
     );

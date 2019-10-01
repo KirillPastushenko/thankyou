@@ -315,15 +315,16 @@ h5 {
 #thx-news .toName {
   display: block;
 }
-#thx-news .comment,
+#thx-news .comment {
+  margin-top: 18px;
+}
 #thx-news .comment div,
 #thx-news .comment p {
   font-family: "Effra_Regular";
-  font-style: italic;
   font-size: 14px;
   line-height: 1.4;
-  margin-top: 18px;
   white-space: pre-wrap;
+  padding-top: 5px;
 }
 #thx-news .comment.date {
   color: #1d1d1b;
@@ -334,7 +335,7 @@ h5 {
   font-size: 13px;
   line-height: 1.4;
   margin-top: 10px;
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .sidebar {
