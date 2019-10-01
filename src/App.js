@@ -15,7 +15,7 @@ class App extends Component {
     const { getUserListId } = this.props;
     getUserListId();
   }
-  render() {
+  render() { 
     const { userId } = this.props;
     return (
       <Fragment> 

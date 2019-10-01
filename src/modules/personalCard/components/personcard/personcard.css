@@ -89,3 +89,10 @@
   height: 56px;
   padding-right: 2px;
 }
+
+
+
+@media (max-width:1200px){
+  .person { padding: 1.250vw 1.667vw 2.250vw 1.667vw; } .person h5:first-of-type { margin-top: 1.833vw; } .person h5:last-of-type { margin-top: 4.167vw; } .badge.active .person { transform: scale(1) translateX(calc(-50% + 2.917vw)); } .badge .person { box-shadow: 0.583vw 0.583vw 2.250vw rgba(0, 0, 0, 0.3); } .badge .num-green { font-size: 2.167vw; padding: 0.583vw; height: 3.417vw; } .badge .num-red { font-size: 2.167vw; width: 3.417vw; height: 3.417vw; padding-right: 0.167vw; line-height: 3.417vw; } .badge .person { top: 6.667vw; } .badge .person:before { width: 2.167vw; height: 2.167vw; top: -2.083vw; left: calc(50% - 1.083vw); } .badge .flex-col-c-t { margin: 0 1.000vw; } .badge h5:first-of-type { margin-top: 2.583vw; } .badge h5:last-of-type { margin-top: 1.667vw; } .badge .reward { width: 5.000vw; height: 5.000vw; } .num-green { font-size: 3.083vw; padding: 0.833vw; border-radius: 3.333vw; min-width: 4.667vw; height: 4.667vw; } .num-red { font-size: 3.083vw; border-radius: 5.667vw; line-height: 4.667vw; width: 4.667vw; height: 4.667vw; padding-right: 0.167vw; } 
+
+}

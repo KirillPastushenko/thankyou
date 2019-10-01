@@ -2,3 +2,8 @@
     margin-bottom: 15px;
     margin-right: 10px;
 }
+
+
+@media (max-width:1200px) {
+    .pageContent .ant-pagination { margin-bottom: 1.250vw; margin-right: 0.833vw; } 
+}

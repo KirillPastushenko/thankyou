@@ -17,7 +17,7 @@ class Default extends PureComponent {
     return (
      
         <Fragment>
-          <section>
+          <section id="default-block">
 		        <div className="container" style={{position:"relative",zIndex:1}}>
               {/* <Regions/> */}
               <div className="flex-spb-t">

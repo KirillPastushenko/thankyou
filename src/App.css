@@ -32,6 +32,7 @@ html {
 }
 body {   
   margin: 0;
+  background-color: #ECEAEA;
 }
 a:focus {
   outline: thin dotted;
@@ -317,6 +318,7 @@ h5 {
 }
 #thx-news .comment {
   margin-top: 18px;
+  font-size: 16px;
 }
 #thx-news .comment div,
 #thx-news .comment p {
@@ -453,6 +455,7 @@ h5 {
 .head-yellow .btn-filter.active {
   color: #e9bd00;
 }
+
 
 .desc {
   font-family: "Effra_Medium";
@@ -679,4 +682,55 @@ footer {
   .person-photo > .person {
     transform: scale(0) translateX(-44%);
   }
+}
+
+
+
+@media (max-width:1200px){
+  .container { width: calc(100% - 2.500vw); max-width: 96.250vw; } 
+  footer .footer { padding: 3.333vw; margin-top: 4.583vw; } 
+  #thanks-top { margin-bottom: 1.667vw; } 
+  h1 { font-size: 2.917vw; margin-top: 10.667vw; margin-bottom: 3.333vw; } 
+  h1 > span { font-size: 6.167vw; margin-top: 1.500vw; } 
+  h4 { font-size: 2vw; } 
+  h5 { font-size: 1.333vw; margin-bottom: 1.500vw; } 
+  #thanks-form .col-6 { width: calc(50% - 0.583vw); } 
+  #thanks .sp-peoplepicker-initialHelpText { font-size: 1.500vw; } 
+  #thanks .emoji-wysiwyg-editor { font-size: 1.500vw; } 
+  #my { margin-top: 8.333vw; } 
+  #thanks-form { padding-bottom: 5.250vw; } 
+  #thx-news .comment { margin-top: 1.500vw; font-size: 1.333vw;} 
+  #thx-news .comment div, #thx-news .comment p { font-size: 1.167vw; padding-top: 0.417vw; } 
+  #thx-news .like { font-size: 1.083vw; margin-top: 0.833vw; } 
+  .sidebar { margin-left: 2.500vw; } 
+  .sidebar .person-name, #thx-news .person-name, #thx-news .person-name span { font-size: 1.333vw; width: 11.250vw; margin-top: 0.250vw; } 
+  .head-green, .head-red, .head-yellow { height: 8.500vw; } .sidebar .angle-right { margin-bottom: 2.083vw; } 
+  .angle-right:after { border: 8.333vw solid transparent; border-bottom: 8.333vw solid green; border-left: 8.333vw solid green; top: -5.167vw; display:none} 
+  .angle-left:after { top: -4.167vw; right: 100%; border: 8.333vw solid transparent; border-right: 8.333vw solid green; border-bottom: 8.333vw solid green; display:none } 
+  .angle-right.head-green:after { border-bottom: 8.333vw solid #4e817b; border-left: 8.333vw solid #4e817b; } 
+  .angle-right.head-yellow:after { border-bottom: 8.333vw solid #c09c09; border-left: 8.333vw solid #c09c09; } 
+  .angle-left.head-red:after { border-right: 8.333vw solid #aa0f18; border-bottom: 8.333vw solid #aa0f18; } 
+  .head-red { margin-bottom: 2.083vw; } .btn-more { border-radius: 1.583vw; padding: 0.167vw 0.417vw; width: 4.667vw; margin: 2.500vw auto 0.833vw auto; font-size: 1.167vw; } 
+  .btn-filter { border-radius: 2.083vw; padding: 0.417vw 1.000vw; margin: 0.833vw; } .desc { font-size: 0.917vw; margin-top: 0.833vw; } 
+  .loading { height: 4.167vw; } 
+  .logo { min-width: 14.167vw; } .person-name { font-size: 1.500vw; } .person-data { font-size: 0.917vw; margin-top: 0.583vw; } 
+  .person-job { padding-right: 0.333vw; } .person-loc { padding-left: 0.333vw; } 
+  .sidebar .badge { margin: 0 1.667vw 0 1.667vw; padding: 0.833vw 0; height: 7.500vw; }
+  #thx-who { margin-top: 4.583vw; } .thx-news-item { margin: 0 1.667vw; padding: 0.833vw 0; } 
+  .thx-news-item > .flex-spb-c { background-position: calc(50% - 1.333vw) calc(50% - 0.250vw); background-size: 3.250vw 3.167vw; } 
+  #peoplePickerDiv_TopSpan_AutoFillDiv .ms-core-menu-label { font-size: 1.500vw; } 
+  #peoplePickerDiv_TopSpan_AutoFillDiv .ms-core-menu-sublabel { font-size: 0.917vw; }  
+  #peoplePickerDiv_TopSpan_ResolvedList span { font-size: 1.500vw; } 
+  footer { padding: 3.333vw; margin-top: 4.583vw; } 
+}
+
+
+@media(max-width:768px){
+  #thanks-form .container>.flex-spb-t,
+  #default-block .container>.flex-spb-t  {flex-direction: column}
+  #thanks-form .container>.flex-spb-t>.col-6,
+  #default-block .container>.flex-spb-t >.col-8,
+  #default-block .container>.flex-spb-t >.col-4{width:100%}
+  .sidebar {margin-left: 0;margin-top:4.583vw;}
+
 }

@@ -1,3 +1,7 @@
 .rewards{width: 80%;margin: 0 auto;}
 .rewards>div{width: 25%}
 .reward {width: 70px;height: 70px;background-size: 100% auto;}
+
+@media (max-width:1200px){
+    .reward {width: 5.833vw;height: 5.833vw;}
+}

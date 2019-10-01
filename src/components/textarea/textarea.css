@@ -17,3 +17,9 @@
   width: 20px;
   height: 20px;
 }
+
+
+
+@media(max-width:1200px){
+  .pickerContainer { right: 0.167vw; top: -0.833vw; } .emojiPicker { width: 1.667vw; height: 1.667vw; } 
+}

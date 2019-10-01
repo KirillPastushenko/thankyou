@@ -9,3 +9,14 @@ ul.regionList li.active span {color: #fff;}
 .regionBlock {padding-top: 23px;padding-bottom: 13px;position:relative}
 .regionBlock:after{content:"";position: absolute;width: 64%;height: 100%;background-color: #ddd;left: 18%;top: 0;border-radius: 50px;z-index: 0;}
 ul.regionList li.active{color: #fff;background-color: #1D1D1B;border-radius: 15px;padding: 2px 9px;}
+
+
+@media (max-width:1200px){
+    .regionList li{margin: 0 0.417vw;} 
+    .regionHeader, #thanks ul.regionList li {margin-bottom: 0.417vw;font-size: 1.167vw;margin: 0.000vw 1.250vw;} 
+    ul.regionList li span {margin-bottom: 0.417vw;font-size: 1.167vw;} 
+    .regionBlock {padding-top: 1.917vw;padding-bottom: 1.083vw;} 
+    .regionBlock:after{border-radius: 4.167vw;} 
+    ul.regionList li.active{border-radius: 1.250vw;padding: 0.167vw 0.750vw;}
+
+}

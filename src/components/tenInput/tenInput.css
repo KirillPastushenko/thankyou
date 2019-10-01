@@ -7,3 +7,9 @@
  
 
 
+@media (max-width:1200px){
+    #thanks-form .tenInput input{padding-bottom: 0.167vw;font-size: 3.000vw;border-radius: 2.917vw;} 
+    .tenInput{width: 11.167vw;} .btn-counter{width: 1.750vw;height: 1.750vw;} 
+    .btn-counter.plus{right: 1.333vw;top: 1.083vw;line-height: 1.500vw;} 
+    .btn-counter.minus{top: 1.083vw;left: 1.083vw;line-height: 1.583vw;font-size: 1.750vw;}
+}

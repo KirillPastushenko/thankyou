@@ -141,3 +141,20 @@
 #thanks-form [class$="option"]:hover {
   background-color: #fafafa;
 }
+
+.btn-counter{
+  padding:0
+}
+
+@media (max-width:1200px){
+  #thanks-submit { font-size: 3.000vw; padding: 0.167vw 8.083vw; border-radius: 2.833vw; } 
+  #thanks-form textarea { margin-bottom: 3.333vw; margin-top: 1.250vw; height: 10.667vw; font-size: 1.500vw; } 
+  #thanks-form .textArea { margin-bottom: 3.333vw; margin-top: 1.250vw; min-height: 10.667vw; font-size: 1.500vw; } 
+  #thanks-form input { padding-bottom: 0.583vw; font-size: 1.500vw; margin-bottom: 0.583vw; } 
+  #thanks-form .ant-input { padding: 2.083vw 0; } 
+  #thanks-form [class$="control"] { height: 3.833vw; margin-bottom: 2.083vw; } 
+  #thanks-form [class$="singleValue"] { font-size: 1.500vw; } 
+  #thanks-form [class$="placeholder"] { font-size: 1.500vw; } 
+  #react-autowhatever-1 { max-height: 20.833vw; } 
+  #react-autowhatever-1 li { padding: 0.833vw 0; padding-left: 1.667vw; } 
+}

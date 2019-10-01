@@ -22,6 +22,16 @@
 .pageContent .ant-descriptions.ant-descriptions-bordered {
   margin-bottom: 20px;
 }
+
+@media (max-width:1200px){
+  .pageContent .waIcon { width: 1.083vw; margin-left: 1.667vw; margin-right: 0.417vw; margin-bottom: 0.167vw; } 
+  .pageContent .mailIcon, .pageContent .phoneIcon { margin-right: 0.417vw; } 
+  .pageContent .calendarIcon { margin-left: 1.667vw; } 
+  .pageContent .ant-descriptions.ant-descriptions-bordered { margin-bottom: 1.667vw; } 
+}
+
+
+
 @media (max-width: 760px) {
   .pageContent .ant-descriptions-item-label {
     width: 100%;
@@ -31,8 +41,7 @@
     width: 100%;
     display: block;
   }
-  .pageContent .ant-descriptions.ant-descriptions-bordered {
-  }
+  .pageContent .ant-descriptions.ant-descriptions-bordered {}
   .pageContent .ant-descriptions-title {
     margin: 15px;
   }

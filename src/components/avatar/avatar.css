@@ -41,3 +41,8 @@
 .person-photo {
   
 }
+
+@media (max-width:1200px){
+.person-photo > .person { transform: scale(0) translateX(calc(-50% + 2.917vw)); } .person-photo { width: 5.833vw; height: 5.833vw; margin-right: 1.417vw; } .badge .person { width: 33.333vw; margin-left: -14.167vw; } 
+.peoplePicker .badge .person { margin-left: -16.583vw; top: 2.250vw;} 
+}
