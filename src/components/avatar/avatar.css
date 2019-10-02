@@ -46,3 +46,7 @@
 .person-photo > .person { transform: scale(0) translateX(calc(-50% + 2.917vw)); } .person-photo { width: 5.833vw; height: 5.833vw; margin-right: 1.417vw; } .badge .person { width: 33.333vw; margin-left: -14.167vw; } 
 .peoplePicker .badge .person { margin-left: -16.583vw; top: 2.250vw;} 
 }
+
+@media(max-width:768px){
+  .person-photo > .person { transform: scale(0) translateX(calc(-50% + 4.375vw)); } .person-photo { width: 8.750vw; height: 8.750vw; margin-right: 2.126vw; } .badge .person { width: 49.999vw; margin-left: -21.250vw; } .peoplePicker .badge .person { margin-left: -24.874vw; top: 3.375vw;}
+}

@@ -732,4 +732,20 @@ footer {
   #default-block .container>.flex-spb-t >.col-8,
   #default-block .container>.flex-spb-t >.col-4{width:100%}
   .sidebar {margin-left: 0;margin-top:4.583vw;}
+
+.container { width: calc(100% - 3.750vw); max-width: 144.375vw; } 
+footer .footer { padding: 5.000vw; margin-top: 6.875vw; } 
+#thanks-top { margin-bottom: 2.501vw; } 
+h1 { font-size: 4.375vw; margin-top: 16.000vw; margin-bottom: 5.000vw; } 
+h1 > span { font-size: 9.250vw; margin-top: 2.250vw; } 
+h4 { font-size: 3.000vw; } 
+h5 { font-size: 1.999vw; margin-bottom: 2.250vw; } 
+#thanks-form .col-6 { width: calc(50% - 0.874vw); } 
+#thanks .sp-peoplepicker-initialHelpText { font-size: 2.250vw; } 
+#thanks .emoji-wysiwyg-editor { font-size: 2.250vw; } 
+#my { margin-top: 12.500vw; } 
+#thanks-form { padding-bottom: 7.875vw; } #thx-news .comment { margin-top: 2.250vw; font-size: 1.999vw;} 
+#thx-news .comment div, #thx-news .comment p { font-size: 1.751vw; padding-top: 0.625vw; } 
+#thx-news .like { font-size: 1.624vw; margin-top: 1.249vw; } .sidebar { margin-left: 0vw; } .sidebar .person-name, #thx-news .person-name, #thx-news .person-name span { font-size: 1.999vw; width: 16.875vw; margin-top: 0.375vw; } .head-green, .head-red, .head-yellow { height: 12.750vw; } .sidebar .angle-right { margin-bottom: 3.125vw; } .angle-right:after { border: 12.500vw solid transparent; border-bottom: 12.500vw solid green; border-left: 12.500vw solid green; top: -7.750vw; display:none} .angle-left:after { top: -6.250vw; right: 100%; border: 12.500vw solid transparent; border-right: 12.500vw solid green; border-bottom: 12.500vw solid green; display:none } .angle-right.head-green:after { border-bottom: 12.500vw solid #4e817b; border-left: 12.500vw solid #4e817b; } .angle-right.head-yellow:after { border-bottom: 12.500vw solid #c09c09; border-left: 12.500vw solid #c09c09; } .angle-left.head-red:after { border-right: 12.500vw solid #aa0f18; border-bottom: 12.500vw solid #aa0f18; } .head-red { margin-bottom: 3.125vw; } .btn-more { border-radius: 2.374vw; padding: 0.251vw 0.625vw; width: 7.000vw; margin: 3.750vw auto 1.249vw auto; font-size: 1.751vw; } .btn-filter { border-radius: 3.125vw; padding: 0.625vw 1.500vw; margin: 1.249vw; } .desc { font-size: 1.376vw; margin-top: 1.249vw; } .loading { height: 6.250vw; } .logo { min-width: 21.250vw; } .person-name { font-size: 2.250vw; } .person-data { font-size: 1.376vw; margin-top: 0.874vw; } .person-job { padding-right: 0.500vw; } .person-loc { padding-left: 0.500vw; } .sidebar .badge { margin: 0 2.501vw 0 2.501vw; padding: 1.249vw 0; height: 11.250vw; } #thx-who { margin-top: 6.875vw; } .thx-news-item { margin: 0 2.501vw; padding: 1.249vw 0; } .thx-news-item > .flex-spb-c { background-position: calc(50% - 1.999vw) calc(50% - 0.375vw); background-size: 4.875vw 4.750vw; } #peoplePickerDiv_TopSpan_AutoFillDiv .ms-core-menu-label { font-size: 2.250vw; } #peoplePickerDiv_TopSpan_AutoFillDiv .ms-core-menu-sublabel { font-size: 1.376vw; } #peoplePickerDiv_TopSpan_ResolvedList span { font-size: 2.250vw; } footer { padding: 5.000vw; margin-top: 6.875vw; } 
+
 }

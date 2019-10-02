@@ -13,3 +13,9 @@
     .btn-counter.plus{right: 1.333vw;top: 1.083vw;line-height: 1.500vw;} 
     .btn-counter.minus{top: 1.083vw;left: 1.083vw;line-height: 1.583vw;font-size: 1.750vw;}
 }
+
+
+
+@media(max-width:768px){
+    #thanks-form .tenInput input{padding-bottom: 0.251vw;font-size: 4.500vw;border-radius: 4.375vw;} .tenInput{width: 16.750vw;} .btn-counter{width: 2.625vw;height: 2.625vw;} .btn-counter.plus{right: 1.999vw;top: 1.624vw;line-height: 2.250vw;} .btn-counter.minus{top: 1.624vw;left: 1.624vw;line-height: 2.374vw;font-size: 2.625vw;}
+}

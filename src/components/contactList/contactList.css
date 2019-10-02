@@ -50,3 +50,10 @@
     padding: 15px;
   }
 }
+
+
+
+@media(max-width:768px){
+  .pageContent .waIcon { width: 1.624vw; margin-left: 2.501vw; margin-right: 0.625vw; margin-bottom: 0.251vw; } .pageContent .mailIcon, .pageContent .phoneIcon { margin-right: 0.625vw; } .pageContent .calendarIcon { margin-left: 2.501vw; } .pageContent .ant-descriptions.ant-descriptions-bordered { margin-bottom: 2.501vw; }
+
+}

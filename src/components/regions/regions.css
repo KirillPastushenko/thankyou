@@ -20,3 +20,8 @@ ul.regionList li.active{color: #fff;background-color: #1D1D1B;border-radius: 15p
     ul.regionList li.active{border-radius: 1.250vw;padding: 0.167vw 0.750vw;}
 
 }
+
+
+@media(max-width:768px){
+    .regionList li{margin: 0 0.625vw;} .regionHeader, #thanks ul.regionList li {margin-bottom: 0.625vw;font-size: 1.751vw;margin: 0.000vw 1.875vw;} ul.regionList li span {margin-bottom: 0.625vw;font-size: 1.751vw;} .regionBlock {padding-top: 2.876vw;padding-bottom: 1.624vw;} .regionBlock:after{border-radius: 6.250vw;} ul.regionList li.active{border-radius: 1.875vw;padding: 0.251vw 1.125vw;} 
+}

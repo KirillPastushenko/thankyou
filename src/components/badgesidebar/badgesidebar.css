@@ -9,3 +9,8 @@
 @media (max-width:1200px){
     .person-rating{font-size: 1.167vw;padding: 0.000vw 0.583vw;border-radius: 1.083vw;line-height: 1.750vw;} .person-rating:after{font-size: 0.917vw;left: calc(100% + 0.667vw);top: 0.083vw;} 
 }
+
+
+@media(max-width:768px){
+    .person-rating{font-size: 1.751vw;padding: 0.000vw 0.874vw;border-radius: 1.624vw;line-height: 2.625vw;} .person-rating:after{font-size: 1.376vw;left: calc(100% + 1.001vw);top: 0.124vw;} 
+}

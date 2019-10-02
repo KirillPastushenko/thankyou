@@ -5,3 +5,8 @@
 @media (max-width:1200px){
     .reward {width: 5.833vw;height: 5.833vw;}
 }
+
+
+@media(max-width:768px){
+    .reward {width: 8.750vw;height: 8.750vw;}
+}
